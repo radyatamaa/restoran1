@@ -21,5 +21,30 @@ namespace Restoran
         {
 
         }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+
+            menu_admin frm2 = new menu_admin();
+            frm2.Show();
+
+        }
+
+        private void btn_kembali_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+
+            MenuUtama frm2 = new MenuUtama();
+            frm2.Show();
+
+        }
+
+        private void login_admin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -107,6 +107,7 @@
             this.btn_menu_admin.TabIndex = 5;
             this.btn_menu_admin.Text = "Menu Admin";
             this.btn_menu_admin.UseVisualStyleBackColor = true;
+            this.btn_menu_admin.Click += new System.EventHandler(this.btn_menu_admin_Click);
             // 
             // btn_minuman
             // 
@@ -192,6 +193,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuUtama_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -16,5 +16,21 @@ namespace Restoran
         {
             InitializeComponent();
         }
+
+        private void btn_menu_admin_Click(object sender, EventArgs e)
+        {
+           
+            this.Hide();
+
+            login_admin frm2 = new login_admin();
+            frm2.Show();
+
+           
+        }
+
+        private void MenuUtama_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

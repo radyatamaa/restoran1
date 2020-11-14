@@ -37,6 +37,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_logout = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -45,6 +46,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.Controls.Add(this.btn_logout);
             this.panel2.Controls.Add(this.btn_laporan);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -134,6 +136,7 @@
             this.btn_menu.TabIndex = 3;
             this.btn_menu.Text = "Kelola Data Menu";
             this.btn_menu.UseVisualStyleBackColor = true;
+            this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
             // 
             // panel1
             // 
@@ -168,6 +171,27 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Restoran Sushi Sherilyn";
             // 
+            // btn_logout
+            // 
+            this.btn_logout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_logout.FlatAppearance.BorderSize = 0;
+            this.btn_logout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.ForeColor = System.Drawing.Color.White;
+            this.btn_logout.Image = global::Restoran.Properties.Resources.analytics;
+            this.btn_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_logout.Location = new System.Drawing.Point(-2, 351);
+            this.btn_logout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btn_logout.Size = new System.Drawing.Size(228, 64);
+            this.btn_logout.TabIndex = 6;
+            this.btn_logout.Text = "Logout";
+            this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.button1_Click);
+            // 
             // menu_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,6 +202,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "menu_admin";
             this.Text = "menu_admin";
+            this.Load += new System.EventHandler(this.menu_admin_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -198,5 +223,6 @@
         private System.Windows.Forms.Button btn_laporan;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_logout;
     }
 }
