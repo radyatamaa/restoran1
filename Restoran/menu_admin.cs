@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Caching;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,7 +22,7 @@ namespace Restoran
         private void btn_menu_Click(object sender, EventArgs e)
         {
 
-            this.Close();
+            this.Hide();
 
             kelola_menu frm2 = new kelola_menu();
             frm2.Show();
@@ -30,8 +31,10 @@ namespace Restoran
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ObjectCache cache = MemoryCache.Default;
+            cache.Remove("userLogin");
 
-            this.Close();
+            this.Hide();
 
             login_admin frm2 = new login_admin();
             frm2.Show();
