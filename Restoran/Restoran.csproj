@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,6 +81,39 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="restoran_data_model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoran_data_model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="restoran_data_model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoran_data_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="restoran_data_model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoran_data_model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>restoran_data_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_detail_order.cs">
+      <DependentUpon>restoran_data_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_menu.cs">
+      <DependentUpon>restoran_data_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_order.cs">
+      <DependentUpon>restoran_data_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_pembayaran.cs">
+      <DependentUpon>restoran_data_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_user.cs">
+      <DependentUpon>restoran_data_model.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="kelola_menu.resx">
       <DependentUpon>kelola_menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +136,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -103,6 +146,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EntityDeploy Include="restoran_data_model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>restoran_data_model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="restoran_data_model.edmx.diagram">
+      <DependentUpon>restoran_data_model.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -126,6 +176,7 @@
     <None Include="Resources\food-serving.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <None Include="Resources\sashimi.jpeg" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +184,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\right-arrow.png" />
+=======
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="restoran_data_model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>restoran_data_model.edmx</DependentUpon>
+      <LastGenOutput>restoran_data_model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="restoran_data_model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>restoran_data_model.edmx</DependentUpon>
+      <LastGenOutput>restoran_data_model.cs</LastGenOutput>
+    </Content>
+>>>>>>> Stashed changes
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

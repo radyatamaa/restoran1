@@ -41,12 +41,6 @@
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_simpan = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nama_menu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jenis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.harga_satuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.keterangan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.foto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_foto = new System.Windows.Forms.TextBox();
             this.btn_browse = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -59,11 +53,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_harga = new System.Windows.Forms.TextBox();
             this.txt_nama_menu = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -77,7 +73,7 @@
             this.panel2.Location = new System.Drawing.Point(8, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(228, 533);
+            this.panel2.Size = new System.Drawing.Size(228, 639);
             this.panel2.TabIndex = 6;
             // 
             // btn_kembali
@@ -148,7 +144,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(8, 533);
+            this.panel1.Size = new System.Drawing.Size(8, 639);
             this.panel1.TabIndex = 5;
             // 
             // panel3
@@ -180,6 +176,7 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.btn_hapus);
             this.panel4.Controls.Add(this.btn_update);
             this.panel4.Controls.Add(this.btn_simpan);
@@ -198,35 +195,38 @@
             this.panel4.Controls.Add(this.txt_nama_menu);
             this.panel4.Location = new System.Drawing.Point(236, 40);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(613, 493);
+            this.panel4.Size = new System.Drawing.Size(613, 599);
             this.panel4.TabIndex = 8;
             // 
             // btn_hapus
             // 
-            this.btn_hapus.Location = new System.Drawing.Point(303, 279);
+            this.btn_hapus.Location = new System.Drawing.Point(303, 379);
             this.btn_hapus.Name = "btn_hapus";
             this.btn_hapus.Size = new System.Drawing.Size(75, 23);
             this.btn_hapus.TabIndex = 15;
             this.btn_hapus.Text = "Hapus";
             this.btn_hapus.UseVisualStyleBackColor = true;
+            this.btn_hapus.Click += new System.EventHandler(this.btn_hapus_Click);
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(222, 279);
+            this.btn_update.Location = new System.Drawing.Point(222, 379);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(75, 23);
             this.btn_update.TabIndex = 14;
             this.btn_update.Text = "Update";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // btn_simpan
             // 
-            this.btn_simpan.Location = new System.Drawing.Point(139, 279);
+            this.btn_simpan.Location = new System.Drawing.Point(139, 379);
             this.btn_simpan.Name = "btn_simpan";
             this.btn_simpan.Size = new System.Drawing.Size(75, 23);
             this.btn_simpan.TabIndex = 13;
             this.btn_simpan.Text = "Simpan";
             this.btn_simpan.UseVisualStyleBackColor = true;
+            this.btn_simpan.Click += new System.EventHandler(this.btn_simpan_Click);
             // 
             // dataGridView1
             // 
@@ -234,47 +234,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.nama_menu,
-            this.jenis,
-            this.harga_satuan,
-            this.keterangan,
-            this.foto});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 320);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 437);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(607, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(541, 150);
             this.dataGridView1.TabIndex = 12;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            // 
-            // nama_menu
-            // 
-            this.nama_menu.HeaderText = "Nama Menu";
-            this.nama_menu.Name = "nama_menu";
-            // 
-            // jenis
-            // 
-            this.jenis.HeaderText = "Jenis";
-            this.jenis.Name = "jenis";
-            // 
-            // harga_satuan
-            // 
-            this.harga_satuan.HeaderText = "Harga Satuan";
-            this.harga_satuan.Name = "harga_satuan";
-            // 
-            // keterangan
-            // 
-            this.keterangan.HeaderText = "Keterangan";
-            this.keterangan.Name = "keterangan";
-            // 
-            // foto
-            // 
-            this.foto.HeaderText = "Foto";
-            this.foto.Name = "foto";
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txt_foto
             // 
@@ -291,6 +256,7 @@
             this.btn_browse.TabIndex = 10;
             this.btn_browse.Text = "Browse";
             this.btn_browse.UseVisualStyleBackColor = true;
+            this.btn_browse.Click += new System.EventHandler(this.btn_browse_Click);
             // 
             // label8
             // 
@@ -380,11 +346,21 @@
             this.txt_nama_menu.Size = new System.Drawing.Size(348, 23);
             this.txt_nama_menu.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(139, 260);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(175, 99);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
             // kelola_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 533);
+            this.ClientSize = new System.Drawing.Size(849, 639);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -402,6 +378,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -430,14 +407,9 @@
         private System.Windows.Forms.Button btn_browse;
         private System.Windows.Forms.TextBox txt_foto;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nama_menu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn jenis;
-        private System.Windows.Forms.DataGridViewTextBoxColumn harga_satuan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn keterangan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn foto;
         private System.Windows.Forms.Button btn_simpan;
         private System.Windows.Forms.Button btn_hapus;
         private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

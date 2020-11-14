@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Caching;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace Restoran
         public login_admin()
         {
             InitializeComponent();
+           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -24,11 +26,33 @@ namespace Restoran
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+            using (var ctx = new db_dataEntities())
+            {
+                var username = this.txtusername.Text;
+                var password = this.txtpassword.Text;
 
-            this.Hide();
+                var getUser = ctx.tbl_user.Where(o => o.username == username && o.password == password).FirstOrDefault();
 
-            menu_admin frm2 = new menu_admin();
-            frm2.Show();
+                if(getUser != null)
+                {
+                    ObjectCache cache = MemoryCache.Default;
+                    CacheItemPolicy cacheItemPolicy = new CacheItemPolicy();                  
+                    cache.Add("userLogin", getUser,cacheItemPolicy);
+                   
+                    this.Hide();
+
+                    menu_admin frm2 = new menu_admin();
+                    frm2.Show();
+            
+                }
+                else
+                {
+                    MessageBox.Show("please check username and password");
+                    this.txtusername.Text = "";
+                    this.txtpassword.Text = "";
+                }
+            }
+           
 
         }
 
