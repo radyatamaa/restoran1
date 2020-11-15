@@ -38,11 +38,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_hapus = new System.Windows.Forms.Button();
+            this.btn_tambah = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_next_page = new System.Windows.Forms.Button();
             this.btn_back_page = new System.Windows.Forms.Button();
             this.no_meja = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_order = new System.Windows.Forms.Button();
             this.lbl_order5 = new System.Windows.Forms.Label();
             this.lbl_pcs5 = new System.Windows.Forms.Label();
             this.lbl5 = new System.Windows.Forms.Label();
@@ -92,6 +95,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_menu5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty4)).BeginInit();
@@ -220,7 +224,7 @@
             this.panel3.Location = new System.Drawing.Point(234, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(945, 31);
+            this.panel3.Size = new System.Drawing.Size(1283, 31);
             this.panel3.TabIndex = 2;
             // 
             // label2
@@ -241,11 +245,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.btn_hapus);
+            this.panel4.Controls.Add(this.btn_tambah);
+            this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.btn_next_page);
             this.panel4.Controls.Add(this.btn_back_page);
             this.panel4.Controls.Add(this.no_meja);
             this.panel4.Controls.Add(this.label33);
-            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.btn_order);
             this.panel4.Controls.Add(this.lbl_order5);
             this.panel4.Controls.Add(this.lbl_pcs5);
             this.panel4.Controls.Add(this.lbl5);
@@ -293,8 +300,40 @@
             this.panel4.Controls.Add(this.pcb_menu0);
             this.panel4.Location = new System.Drawing.Point(234, 31);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(942, 673);
+            this.panel4.Size = new System.Drawing.Size(1280, 673);
             this.panel4.TabIndex = 3;
+            // 
+            // btn_hapus
+            // 
+            this.btn_hapus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_hapus.Location = new System.Drawing.Point(1035, 25);
+            this.btn_hapus.Name = "btn_hapus";
+            this.btn_hapus.Size = new System.Drawing.Size(132, 71);
+            this.btn_hapus.TabIndex = 56;
+            this.btn_hapus.Text = "Hapus";
+            this.btn_hapus.UseVisualStyleBackColor = false;
+            this.btn_hapus.Click += new System.EventHandler(this.btn_hapus_Click);
+            // 
+            // btn_tambah
+            // 
+            this.btn_tambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_tambah.Location = new System.Drawing.Point(1188, 22);
+            this.btn_tambah.Name = "btn_tambah";
+            this.btn_tambah.Size = new System.Drawing.Size(132, 71);
+            this.btn_tambah.TabIndex = 55;
+            this.btn_tambah.Text = "Tambah";
+            this.btn_tambah.UseVisualStyleBackColor = false;
+            this.btn_tambah.Click += new System.EventHandler(this.btn_tambah_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(782, 99);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(557, 268);
+            this.dataGridView1.TabIndex = 54;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btn_next_page
             // 
@@ -310,7 +349,7 @@
             this.btn_next_page.Location = new System.Drawing.Point(669, 604);
             this.btn_next_page.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_next_page.Name = "btn_next_page";
-            this.btn_next_page.Size = new System.Drawing.Size(69, 64);
+            this.btn_next_page.Size = new System.Drawing.Size(525, 64);
             this.btn_next_page.TabIndex = 53;
             this.btn_next_page.UseVisualStyleBackColor = true;
             this.btn_next_page.Click += new System.EventHandler(this.btn_next_page_Click);
@@ -329,7 +368,7 @@
             this.btn_back_page.Location = new System.Drawing.Point(592, 604);
             this.btn_back_page.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_back_page.Name = "btn_back_page";
-            this.btn_back_page.Size = new System.Drawing.Size(69, 64);
+            this.btn_back_page.Size = new System.Drawing.Size(525, 64);
             this.btn_back_page.TabIndex = 52;
             this.btn_back_page.UseVisualStyleBackColor = true;
             this.btn_back_page.Click += new System.EventHandler(this.btn_back_page_Click);
@@ -350,16 +389,16 @@
             this.label33.TabIndex = 49;
             this.label33.Text = "Nomor Meja :";
             // 
-            // button1
+            // btn_order
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(783, 93);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 71);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Order";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_order.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_order.Location = new System.Drawing.Point(1204, 382);
+            this.btn_order.Name = "btn_order";
+            this.btn_order.Size = new System.Drawing.Size(132, 71);
+            this.btn_order.TabIndex = 48;
+            this.btn_order.Text = "Order";
+            this.btn_order.UseVisualStyleBackColor = false;
+            this.btn_order.Click += new System.EventHandler(this.button1_Click);
             // 
             // lbl_order5
             // 
@@ -829,7 +868,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1179, 704);
+            this.ClientSize = new System.Drawing.Size(1517, 704);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -849,6 +888,7 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_menu5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty4)).EndInit();
@@ -922,11 +962,14 @@
         private System.Windows.Forms.Label lbl_harga3;
         private System.Windows.Forms.Label lbl_menu3;
         private System.Windows.Forms.PictureBox pcb_menu3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_order;
         private System.Windows.Forms.TextBox no_meja;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Button btn_back_page;
         private System.Windows.Forms.Button btn_next_page;
+        private System.Windows.Forms.Button btn_tambah;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_hapus;
     }
 }
 
