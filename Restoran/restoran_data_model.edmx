@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="db_dataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="db_dataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -65,6 +65,9 @@
           <Property Name="deleted_by" Type="varchar" MaxLength="255" />
           <Property Name="deleted_date" Type="datetime2" Precision="0" />
           <Property Name="is_active" Type="int" />
+          <Property Name="total_bayar" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="kembali" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="status" Type="int" />
         </EntityType>
         <EntityType Name="tbl_pembayaran">
           <Key>
@@ -110,8 +113,7 @@
           <EntitySet Name="tbl_pembayaran" EntityType="Self.tbl_pembayaran" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_user" EntityType="Self.tbl_user" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="db_dataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -175,7 +177,10 @@
           <Property Name="deleted_by" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="deleted_date" Type="DateTime" Precision="0" />
           <Property Name="is_active" Type="Int32" />
-        </EntityType>
+          <Property Name="total_bayar" Type="Decimal" Nullable="true" />
+          <Property Name="kembali" Type="Decimal" Nullable="true" />
+          <Property Name="status" Type="Int32" Nullable="true" />
+          </EntityType>
         <EntityType Name="tbl_pembayaran">
           <Key>
             <PropertyRef Name="id" />
@@ -278,6 +283,9 @@
           <EntitySetMapping Name="tbl_order">
             <EntityTypeMapping TypeName="db_dataModel.tbl_order">
               <MappingFragment StoreEntitySet="tbl_order">
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="kembali" ColumnName="kembali" />
+                <ScalarProperty Name="total_bayar" ColumnName="total_bayar" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="no_meja" ColumnName="no_meja" />
                 <ScalarProperty Name="subtotal" ColumnName="subtotal" />

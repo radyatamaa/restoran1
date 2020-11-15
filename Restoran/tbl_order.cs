@@ -24,5 +24,8 @@ namespace Restoran
         public string deleted_by { get; set; }
         public Nullable<System.DateTime> deleted_date { get; set; }
         public Nullable<int> is_active { get; set; }
+        public Nullable<decimal> total_bayar { get; set; }
+        public Nullable<decimal> kembali { get; set; }
+        public Nullable<int> status { get; set; }
     }
 }

@@ -31,29 +31,26 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_kembali = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_pembayaan = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.no_meja_txt = new System.Windows.Forms.TextBox();
+            this.subtotal_txt = new System.Windows.Forms.TextBox();
+            this.total_bayar_txt = new System.Windows.Forms.TextBox();
+            this.kembali_txt = new System.Windows.Forms.TextBox();
             this.btn_bayar = new System.Windows.Forms.Button();
             this.btn_biling = new System.Windows.Forms.Button();
-            this.btn_kembali = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_pembayaan = new System.Windows.Forms.Button();
-            this.no_meja = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -93,6 +90,25 @@
             this.panel2.Size = new System.Drawing.Size(228, 529);
             this.panel2.TabIndex = 6;
             // 
+            // btn_kembali
+            // 
+            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_kembali.FlatAppearance.BorderSize = 0;
+            this.btn_kembali.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_kembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_kembali.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_kembali.ForeColor = System.Drawing.Color.White;
+            this.btn_kembali.Image = global::Restoran.Properties.Resources.undo;
+            this.btn_kembali.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_kembali.Location = new System.Drawing.Point(9, 6);
+            this.btn_kembali.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.btn_kembali.Name = "btn_kembali";
+            this.btn_kembali.Size = new System.Drawing.Size(76, 41);
+            this.btn_kembali.TabIndex = 5;
+            this.btn_kembali.UseVisualStyleBackColor = true;
+            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -103,6 +119,35 @@
             this.label1.Size = new System.Drawing.Size(148, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Restoran Sushi Sherilyn";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 67);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_pembayaan
+            // 
+            this.btn_pembayaan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_pembayaan.FlatAppearance.BorderSize = 0;
+            this.btn_pembayaan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_pembayaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_pembayaan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_pembayaan.ForeColor = System.Drawing.Color.White;
+            this.btn_pembayaan.Image = global::Restoran.Properties.Resources.pay;
+            this.btn_pembayaan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_pembayaan.Location = new System.Drawing.Point(0, 176);
+            this.btn_pembayaan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_pembayaan.Name = "btn_pembayaan";
+            this.btn_pembayaan.Size = new System.Drawing.Size(228, 64);
+            this.btn_pembayaan.TabIndex = 4;
+            this.btn_pembayaan.Text = "Pembayaran";
+            this.btn_pembayaan.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -119,14 +164,12 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.no_meja,
-            this.subtotal,
-            this.status});
             this.dataGridView1.Location = new System.Drawing.Point(234, 295);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(597, 190);
             this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label4
             // 
@@ -164,33 +207,34 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Total Bayar";
             // 
-            // textBox1
+            // no_meja_txt
             // 
-            this.textBox1.Location = new System.Drawing.Point(360, 89);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(71, 27);
-            this.textBox1.TabIndex = 13;
+            this.no_meja_txt.Location = new System.Drawing.Point(360, 89);
+            this.no_meja_txt.Name = "no_meja_txt";
+            this.no_meja_txt.Size = new System.Drawing.Size(71, 27);
+            this.no_meja_txt.TabIndex = 13;
             // 
-            // textBox2
+            // subtotal_txt
             // 
-            this.textBox2.Location = new System.Drawing.Point(360, 134);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 27);
-            this.textBox2.TabIndex = 14;
+            this.subtotal_txt.Location = new System.Drawing.Point(360, 134);
+            this.subtotal_txt.Name = "subtotal_txt";
+            this.subtotal_txt.Size = new System.Drawing.Size(167, 27);
+            this.subtotal_txt.TabIndex = 14;
             // 
-            // textBox3
+            // total_bayar_txt
             // 
-            this.textBox3.Location = new System.Drawing.Point(361, 176);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 27);
-            this.textBox3.TabIndex = 15;
+            this.total_bayar_txt.Location = new System.Drawing.Point(361, 176);
+            this.total_bayar_txt.Name = "total_bayar_txt";
+            this.total_bayar_txt.Size = new System.Drawing.Size(167, 27);
+            this.total_bayar_txt.TabIndex = 15;
+            this.total_bayar_txt.TextChanged += new System.EventHandler(this.total_bayar_txt_TextChanged);
             // 
-            // textBox4
+            // kembali_txt
             // 
-            this.textBox4.Location = new System.Drawing.Point(361, 221);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 27);
-            this.textBox4.TabIndex = 16;
+            this.kembali_txt.Location = new System.Drawing.Point(361, 221);
+            this.kembali_txt.Name = "kembali_txt";
+            this.kembali_txt.Size = new System.Drawing.Size(167, 27);
+            this.kembali_txt.TabIndex = 16;
             // 
             // btn_bayar
             // 
@@ -201,6 +245,7 @@
             this.btn_bayar.TabIndex = 17;
             this.btn_bayar.Text = "Proses Pembayaran";
             this.btn_bayar.UseVisualStyleBackColor = true;
+            this.btn_bayar.Click += new System.EventHandler(this.btn_bayar_Click);
             // 
             // btn_biling
             // 
@@ -212,68 +257,6 @@
             this.btn_biling.Text = "Cetak Billing/Struk";
             this.btn_biling.UseVisualStyleBackColor = true;
             // 
-            // btn_kembali
-            // 
-            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_kembali.FlatAppearance.BorderSize = 0;
-            this.btn_kembali.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_kembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_kembali.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_kembali.ForeColor = System.Drawing.Color.White;
-            this.btn_kembali.Image = global::Restoran.Properties.Resources.undo;
-            this.btn_kembali.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_kembali.Location = new System.Drawing.Point(9, 6);
-            this.btn_kembali.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.btn_kembali.Name = "btn_kembali";
-            this.btn_kembali.Size = new System.Drawing.Size(76, 41);
-            this.btn_kembali.TabIndex = 5;
-            this.btn_kembali.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 67);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 76);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_pembayaan
-            // 
-            this.btn_pembayaan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_pembayaan.FlatAppearance.BorderSize = 0;
-            this.btn_pembayaan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_pembayaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_pembayaan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_pembayaan.ForeColor = System.Drawing.Color.White;
-            this.btn_pembayaan.Image = global::Restoran.Properties.Resources.pay;
-            this.btn_pembayaan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_pembayaan.Location = new System.Drawing.Point(0, 176);
-            this.btn_pembayaan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_pembayaan.Name = "btn_pembayaan";
-            this.btn_pembayaan.Size = new System.Drawing.Size(228, 64);
-            this.btn_pembayaan.TabIndex = 4;
-            this.btn_pembayaan.Text = "Pembayaran";
-            this.btn_pembayaan.UseVisualStyleBackColor = true;
-            // 
-            // no_meja
-            // 
-            this.no_meja.HeaderText = "No Meja";
-            this.no_meja.Name = "no_meja";
-            // 
-            // subtotal
-            // 
-            this.subtotal.HeaderText = "Subtotal";
-            this.subtotal.Name = "subtotal";
-            // 
-            // status
-            // 
-            this.status.HeaderText = "Status";
-            this.status.Name = "status";
-            // 
             // menu_pembayaran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -281,10 +264,10 @@
             this.ClientSize = new System.Drawing.Size(831, 529);
             this.Controls.Add(this.btn_biling);
             this.Controls.Add(this.btn_bayar);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.kembali_txt);
+            this.Controls.Add(this.total_bayar_txt);
+            this.Controls.Add(this.subtotal_txt);
+            this.Controls.Add(this.no_meja_txt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -297,12 +280,13 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "menu_pembayaran";
             this.Text = "Menu Pembayaran";
+            this.Load += new System.EventHandler(this.menu_pembayaran_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,14 +307,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox no_meja_txt;
+        private System.Windows.Forms.TextBox subtotal_txt;
+        private System.Windows.Forms.TextBox total_bayar_txt;
+        private System.Windows.Forms.TextBox kembali_txt;
         private System.Windows.Forms.Button btn_bayar;
         private System.Windows.Forms.Button btn_biling;
-        private System.Windows.Forms.DataGridViewTextBoxColumn no_meja;
-        private System.Windows.Forms.DataGridViewTextBoxColumn subtotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn status;
     }
 }
