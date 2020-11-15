@@ -337,7 +337,29 @@ namespace Restoran
         private void button1_Click(object sender, EventArgs e)
         {
             var subTotal = listOrder.Sum(o => o.harga_total);
-            foreach(var order in listOrder)
+            var idOrder = 0;
+            if (listOrder.Count > 0)
+            {
+                var data = new tbl_order
+                {
+                    created_by = "user",
+                    created_date = DateTime.Now,
+                    no_meja = no_meja.Text,
+                    subtotal = subTotal,
+                    is_active = 1
+                };
+                using (var ctx = new db_dataEntities())
+                {
+
+                    var id = ctx.tbl_order.Add(data);
+                    ctx.SaveChanges();
+                    idOrder = id.id;
+                }
+
+              
+            }
+
+            foreach (var order in listOrder)
             {
             
 
@@ -345,7 +367,7 @@ namespace Restoran
                 {
                     created_by = "user",
                     created_date = DateTime.Now,
-                    id_order = order.id_order,
+                    id_order = idOrder,
                     id_menu = order.id_menu,
                     qty = order.qty,
                     harga_satuan = order.harga_satuan,
@@ -364,28 +386,10 @@ namespace Restoran
          
             }
 
-            if (listOrder.Count > 0)
-            {
-                var data = new tbl_order
-                {
-                    created_by = "user",
-                    created_date = DateTime.Now,
-                    no_meja = no_meja.Text,
-                    subtotal = subTotal,
-                    is_active = 1
-                };
-                using (var ctx = new db_dataEntities())
-                {
-                   
-                    ctx.tbl_order.Add(data);
-                    ctx.SaveChanges();
-                }
+            MessageBox.Show("Menu Telah Di Order");
 
-                MessageBox.Show("Menu Telah Di Order");
+            Initial();
 
-                Initial();
-            }
-     
 
         }
 
@@ -408,24 +412,29 @@ namespace Restoran
                     var label = this.Controls.Find("lbl" + i.ToString(), true).FirstOrDefault();
                     var labelPcs = this.Controls.Find("lbl_pcs" + i.ToString(), true).FirstOrDefault();
                     var labelOrder = this.Controls.Find("lbl_order" + i.ToString(), true).FirstOrDefault();
-                    var labelQty = this.Controls.Find("lbl_qty" + i.ToString(), true).FirstOrDefault();
-                    
-                if(int.Parse(labelQty.Text) > 0)
+                    var labelQty = this.Controls.Find("lbl_qty" + i.ToString(), true).Where(o => o.Visible == true).FirstOrDefault();
+                
+                if(labelQty != null)
                 {
-                    var idMenu = namaMenu.Tag;
-                    var order = new Order
+                    if (int.Parse(labelQty.Text) > 0)
                     {
-                        no_meja = no_meja.Text,
-                        nama_menu = namaMenu.Text,
-                        id_order = 1,
-                        id_menu = int.Parse(namaMenu.Tag.ToString()),
-                        qty = int.Parse(labelQty.Text),
-                        harga_satuan = decimal.Parse(lbl_harga2.Text),
-                        harga_total = decimal.Parse(lbl_harga2.Text) * decimal.Parse(labelQty.Text)
-                    };
+                        var idMenu = namaMenu.Tag;
+                        var order = new Order
+                        {
+                            no_meja = no_meja.Text,
+                            nama_menu = namaMenu.Text,
+                            id_order = 1,
+                            id_menu = int.Parse(namaMenu.Tag.ToString()),
+                            qty = int.Parse(labelQty.Text),
+                            harga_satuan = decimal.Parse(hargaMenu.Text),
+                            harga_total = decimal.Parse(hargaMenu.Text) * decimal.Parse(labelQty.Text)
+                        };
 
-                    listOrder.Add(order);
+                        listOrder.Add(order);
+                        labelQty.Text = "0";
+                    }
                 }
+                
             }
             MappingToDataGrid();
         }

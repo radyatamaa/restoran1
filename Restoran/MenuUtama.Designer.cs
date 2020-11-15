@@ -224,7 +224,7 @@
             this.panel3.Location = new System.Drawing.Point(234, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1283, 31);
+            this.panel3.Size = new System.Drawing.Size(1124, 31);
             this.panel3.TabIndex = 2;
             // 
             // label2
@@ -300,13 +300,13 @@
             this.panel4.Controls.Add(this.pcb_menu0);
             this.panel4.Location = new System.Drawing.Point(234, 31);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1280, 673);
+            this.panel4.Size = new System.Drawing.Size(1121, 673);
             this.panel4.TabIndex = 3;
             // 
             // btn_hapus
             // 
             this.btn_hapus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_hapus.Location = new System.Drawing.Point(1035, 25);
+            this.btn_hapus.Location = new System.Drawing.Point(828, 25);
             this.btn_hapus.Name = "btn_hapus";
             this.btn_hapus.Size = new System.Drawing.Size(132, 71);
             this.btn_hapus.TabIndex = 56;
@@ -317,7 +317,7 @@
             // btn_tambah
             // 
             this.btn_tambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_tambah.Location = new System.Drawing.Point(1188, 22);
+            this.btn_tambah.Location = new System.Drawing.Point(981, 22);
             this.btn_tambah.Name = "btn_tambah";
             this.btn_tambah.Size = new System.Drawing.Size(132, 71);
             this.btn_tambah.TabIndex = 55;
@@ -328,7 +328,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(782, 99);
+            this.dataGridView1.Location = new System.Drawing.Point(575, 99);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(557, 268);
             this.dataGridView1.TabIndex = 54;
@@ -349,7 +349,7 @@
             this.btn_next_page.Location = new System.Drawing.Point(669, 604);
             this.btn_next_page.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_next_page.Name = "btn_next_page";
-            this.btn_next_page.Size = new System.Drawing.Size(525, 64);
+            this.btn_next_page.Size = new System.Drawing.Size(39, 64);
             this.btn_next_page.TabIndex = 53;
             this.btn_next_page.UseVisualStyleBackColor = true;
             this.btn_next_page.Click += new System.EventHandler(this.btn_next_page_Click);
@@ -368,14 +368,14 @@
             this.btn_back_page.Location = new System.Drawing.Point(592, 604);
             this.btn_back_page.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_back_page.Name = "btn_back_page";
-            this.btn_back_page.Size = new System.Drawing.Size(525, 64);
+            this.btn_back_page.Size = new System.Drawing.Size(46, 64);
             this.btn_back_page.TabIndex = 52;
             this.btn_back_page.UseVisualStyleBackColor = true;
             this.btn_back_page.Click += new System.EventHandler(this.btn_back_page_Click);
             // 
             // no_meja
             // 
-            this.no_meja.Location = new System.Drawing.Point(783, 55);
+            this.no_meja.Location = new System.Drawing.Point(576, 55);
             this.no_meja.Name = "no_meja";
             this.no_meja.Size = new System.Drawing.Size(132, 27);
             this.no_meja.TabIndex = 50;
@@ -383,7 +383,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(779, 25);
+            this.label33.Location = new System.Drawing.Point(572, 25);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(113, 21);
             this.label33.TabIndex = 49;
@@ -392,7 +392,7 @@
             // btn_order
             // 
             this.btn_order.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_order.Location = new System.Drawing.Point(1204, 382);
+            this.btn_order.Location = new System.Drawing.Point(997, 382);
             this.btn_order.Name = "btn_order";
             this.btn_order.Size = new System.Drawing.Size(132, 71);
             this.btn_order.TabIndex = 48;
@@ -404,7 +404,7 @@
             // 
             this.lbl_order5.AutoSize = true;
             this.lbl_order5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_order5.Location = new System.Drawing.Point(590, 556);
+            this.lbl_order5.Location = new System.Drawing.Point(399, 556);
             this.lbl_order5.Name = "lbl_order5";
             this.lbl_order5.Size = new System.Drawing.Size(71, 17);
             this.lbl_order5.TabIndex = 47;
@@ -414,7 +414,7 @@
             // 
             this.lbl_pcs5.AutoSize = true;
             this.lbl_pcs5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pcs5.Location = new System.Drawing.Point(590, 511);
+            this.lbl_pcs5.Location = new System.Drawing.Point(399, 511);
             this.lbl_pcs5.Name = "lbl_pcs5";
             this.lbl_pcs5.Size = new System.Drawing.Size(76, 17);
             this.lbl_pcs5.TabIndex = 46;
@@ -424,7 +424,7 @@
             // 
             this.lbl5.AutoSize = true;
             this.lbl5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5.Location = new System.Drawing.Point(590, 467);
+            this.lbl5.Location = new System.Drawing.Point(399, 467);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(88, 17);
             this.lbl5.TabIndex = 45;
@@ -432,7 +432,7 @@
             // 
             // lbl_qty5
             // 
-            this.lbl_qty5.Location = new System.Drawing.Point(593, 576);
+            this.lbl_qty5.Location = new System.Drawing.Point(402, 576);
             this.lbl_qty5.Maximum = new decimal(new int[] {
             2000,
             0,
@@ -446,7 +446,7 @@
             // 
             this.lbl_harga5.AutoSize = true;
             this.lbl_harga5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_harga5.Location = new System.Drawing.Point(590, 532);
+            this.lbl_harga5.Location = new System.Drawing.Point(399, 532);
             this.lbl_harga5.Name = "lbl_harga5";
             this.lbl_harga5.Size = new System.Drawing.Size(58, 19);
             this.lbl_harga5.TabIndex = 43;
@@ -456,7 +456,7 @@
             // 
             this.lbl_menu5.AutoSize = true;
             this.lbl_menu5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_menu5.Location = new System.Drawing.Point(590, 487);
+            this.lbl_menu5.Location = new System.Drawing.Point(399, 487);
             this.lbl_menu5.Name = "lbl_menu5";
             this.lbl_menu5.Size = new System.Drawing.Size(68, 19);
             this.lbl_menu5.TabIndex = 42;
@@ -466,7 +466,7 @@
             // 
             this.pcb_menu5.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
             this.pcb_menu5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcb_menu5.Location = new System.Drawing.Point(594, 355);
+            this.pcb_menu5.Location = new System.Drawing.Point(403, 355);
             this.pcb_menu5.Name = "pcb_menu5";
             this.pcb_menu5.Size = new System.Drawing.Size(155, 109);
             this.pcb_menu5.TabIndex = 41;
@@ -476,7 +476,7 @@
             // 
             this.lbl_order4.AutoSize = true;
             this.lbl_order4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_order4.Location = new System.Drawing.Point(308, 556);
+            this.lbl_order4.Location = new System.Drawing.Point(210, 556);
             this.lbl_order4.Name = "lbl_order4";
             this.lbl_order4.Size = new System.Drawing.Size(71, 17);
             this.lbl_order4.TabIndex = 40;
@@ -486,7 +486,7 @@
             // 
             this.lbl_pcs4.AutoSize = true;
             this.lbl_pcs4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pcs4.Location = new System.Drawing.Point(308, 511);
+            this.lbl_pcs4.Location = new System.Drawing.Point(210, 511);
             this.lbl_pcs4.Name = "lbl_pcs4";
             this.lbl_pcs4.Size = new System.Drawing.Size(76, 17);
             this.lbl_pcs4.TabIndex = 39;
@@ -496,7 +496,7 @@
             // 
             this.lbl4.AutoSize = true;
             this.lbl4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.Location = new System.Drawing.Point(308, 467);
+            this.lbl4.Location = new System.Drawing.Point(210, 467);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(88, 17);
             this.lbl4.TabIndex = 38;
@@ -504,7 +504,7 @@
             // 
             // lbl_qty4
             // 
-            this.lbl_qty4.Location = new System.Drawing.Point(311, 576);
+            this.lbl_qty4.Location = new System.Drawing.Point(213, 576);
             this.lbl_qty4.Maximum = new decimal(new int[] {
             2000,
             0,
@@ -518,7 +518,7 @@
             // 
             this.lbl_harga4.AutoSize = true;
             this.lbl_harga4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_harga4.Location = new System.Drawing.Point(308, 532);
+            this.lbl_harga4.Location = new System.Drawing.Point(210, 532);
             this.lbl_harga4.Name = "lbl_harga4";
             this.lbl_harga4.Size = new System.Drawing.Size(58, 19);
             this.lbl_harga4.TabIndex = 36;
@@ -528,7 +528,7 @@
             // 
             this.lbl_menu4.AutoSize = true;
             this.lbl_menu4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_menu4.Location = new System.Drawing.Point(308, 487);
+            this.lbl_menu4.Location = new System.Drawing.Point(210, 487);
             this.lbl_menu4.Name = "lbl_menu4";
             this.lbl_menu4.Size = new System.Drawing.Size(68, 19);
             this.lbl_menu4.TabIndex = 35;
@@ -538,7 +538,7 @@
             // 
             this.pcb_menu4.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
             this.pcb_menu4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcb_menu4.Location = new System.Drawing.Point(312, 355);
+            this.pcb_menu4.Location = new System.Drawing.Point(214, 355);
             this.pcb_menu4.Name = "pcb_menu4";
             this.pcb_menu4.Size = new System.Drawing.Size(155, 109);
             this.pcb_menu4.TabIndex = 34;
@@ -620,7 +620,7 @@
             // 
             this.lbl_order2.AutoSize = true;
             this.lbl_order2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_order2.Location = new System.Drawing.Point(591, 256);
+            this.lbl_order2.Location = new System.Drawing.Point(400, 256);
             this.lbl_order2.Name = "lbl_order2";
             this.lbl_order2.Size = new System.Drawing.Size(71, 17);
             this.lbl_order2.TabIndex = 26;
@@ -630,7 +630,7 @@
             // 
             this.lbl_pcs2.AutoSize = true;
             this.lbl_pcs2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pcs2.Location = new System.Drawing.Point(591, 211);
+            this.lbl_pcs2.Location = new System.Drawing.Point(400, 211);
             this.lbl_pcs2.Name = "lbl_pcs2";
             this.lbl_pcs2.Size = new System.Drawing.Size(76, 17);
             this.lbl_pcs2.TabIndex = 25;
@@ -640,7 +640,7 @@
             // 
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(591, 167);
+            this.lbl2.Location = new System.Drawing.Point(400, 167);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(88, 17);
             this.lbl2.TabIndex = 24;
@@ -648,7 +648,7 @@
             // 
             // lbl_qty2
             // 
-            this.lbl_qty2.Location = new System.Drawing.Point(594, 276);
+            this.lbl_qty2.Location = new System.Drawing.Point(403, 276);
             this.lbl_qty2.Maximum = new decimal(new int[] {
             2000,
             0,
@@ -662,7 +662,7 @@
             // 
             this.lbl_harga2.AutoSize = true;
             this.lbl_harga2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_harga2.Location = new System.Drawing.Point(591, 232);
+            this.lbl_harga2.Location = new System.Drawing.Point(400, 232);
             this.lbl_harga2.Name = "lbl_harga2";
             this.lbl_harga2.Size = new System.Drawing.Size(58, 19);
             this.lbl_harga2.TabIndex = 22;
@@ -672,7 +672,7 @@
             // 
             this.lbl_menu2.AutoSize = true;
             this.lbl_menu2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_menu2.Location = new System.Drawing.Point(591, 187);
+            this.lbl_menu2.Location = new System.Drawing.Point(400, 187);
             this.lbl_menu2.Name = "lbl_menu2";
             this.lbl_menu2.Size = new System.Drawing.Size(68, 19);
             this.lbl_menu2.TabIndex = 21;
@@ -682,7 +682,7 @@
             // 
             this.pcb_menu2.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
             this.pcb_menu2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcb_menu2.Location = new System.Drawing.Point(595, 55);
+            this.pcb_menu2.Location = new System.Drawing.Point(404, 55);
             this.pcb_menu2.Name = "pcb_menu2";
             this.pcb_menu2.Size = new System.Drawing.Size(155, 109);
             this.pcb_menu2.TabIndex = 20;
@@ -692,7 +692,7 @@
             // 
             this.lbl_order1.AutoSize = true;
             this.lbl_order1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_order1.Location = new System.Drawing.Point(309, 256);
+            this.lbl_order1.Location = new System.Drawing.Point(211, 256);
             this.lbl_order1.Name = "lbl_order1";
             this.lbl_order1.Size = new System.Drawing.Size(71, 17);
             this.lbl_order1.TabIndex = 19;
@@ -702,7 +702,7 @@
             // 
             this.lbl_pcs1.AutoSize = true;
             this.lbl_pcs1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pcs1.Location = new System.Drawing.Point(309, 211);
+            this.lbl_pcs1.Location = new System.Drawing.Point(211, 211);
             this.lbl_pcs1.Name = "lbl_pcs1";
             this.lbl_pcs1.Size = new System.Drawing.Size(76, 17);
             this.lbl_pcs1.TabIndex = 18;
@@ -712,7 +712,7 @@
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(309, 167);
+            this.lbl1.Location = new System.Drawing.Point(211, 167);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(88, 17);
             this.lbl1.TabIndex = 17;
@@ -720,7 +720,7 @@
             // 
             // lbl_qty1
             // 
-            this.lbl_qty1.Location = new System.Drawing.Point(312, 276);
+            this.lbl_qty1.Location = new System.Drawing.Point(214, 276);
             this.lbl_qty1.Maximum = new decimal(new int[] {
             2000,
             0,
@@ -734,7 +734,7 @@
             // 
             this.lbl_harga1.AutoSize = true;
             this.lbl_harga1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_harga1.Location = new System.Drawing.Point(309, 232);
+            this.lbl_harga1.Location = new System.Drawing.Point(211, 232);
             this.lbl_harga1.Name = "lbl_harga1";
             this.lbl_harga1.Size = new System.Drawing.Size(58, 19);
             this.lbl_harga1.TabIndex = 15;
@@ -744,7 +744,7 @@
             // 
             this.lbl_menu1.AutoSize = true;
             this.lbl_menu1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_menu1.Location = new System.Drawing.Point(309, 187);
+            this.lbl_menu1.Location = new System.Drawing.Point(211, 187);
             this.lbl_menu1.Name = "lbl_menu1";
             this.lbl_menu1.Size = new System.Drawing.Size(68, 19);
             this.lbl_menu1.TabIndex = 14;
@@ -754,7 +754,7 @@
             // 
             this.pcb_menu1.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
             this.pcb_menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcb_menu1.Location = new System.Drawing.Point(313, 55);
+            this.pcb_menu1.Location = new System.Drawing.Point(215, 55);
             this.pcb_menu1.Name = "pcb_menu1";
             this.pcb_menu1.Size = new System.Drawing.Size(155, 109);
             this.pcb_menu1.TabIndex = 13;
@@ -868,7 +868,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1517, 704);
+            this.ClientSize = new System.Drawing.Size(1358, 704);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
