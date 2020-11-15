@@ -20,12 +20,13 @@ namespace Restoran
 
         public int jenis;
         public int pageNow;
+        public string terlarisFilter;
 
         public void Initial()
         {
-            MenuMapping(1, 0, 3);
+            MenuMapping(1, terlarisFilter, 0, 3);
             jenis = 1;
-            pageNow = 1;
+            pageNow = 0;
         }
         private void btn_menu_admin_Click(object sender, EventArgs e)
         {
@@ -37,10 +38,10 @@ namespace Restoran
 
            
         }
-        public void MenuMapping(int jenis,int page = 0,int size = 3)
+        public void MenuMapping(int jenis, string terlaris , int page = 0,int size = 3)
         {
             var menus = GetMenu(jenis, page, size);
-            var menuTerlaris = GetMenuTerlaris(jenis, 0, 3);
+            var menuTerlaris = GetMenuTerlaris(jenis,terlaris, 0, 3);
             for (int i = 0; i <= 5; i++)
             {
                 if (i >= 0 && i <= 2)
@@ -195,7 +196,7 @@ namespace Restoran
                 return getMenu;
             }
         }
-        public List<tbl_menu> GetMenuTerlaris(int jenis, int page = 0, int size = 3)
+        public List<tbl_menu> GetMenuTerlaris(int jenis, string terlaris, int page = 0, int size = 3)
         {
             using (var ctx = new db_dataEntities())
             {
@@ -205,7 +206,24 @@ namespace Restoran
                 
                 foreach(var menuId in menuIds)
                 {
-                    var count = ctx.tbl_detail_order.Where(o => o.is_active == 1 && o.id_menu == menuId).Count();
+                    var count = 0;
+                    if (terlaris == "Minggu Ini")
+                    {
+                        count = ctx.tbl_detail_order.Where(o => o.is_active == 1 &&
+                        o.created_date >= DateTime.Now.AddDays(-7) && o.created_date <= DateTime.Now && 
+                        o.id_menu == menuId).Count();
+                    }
+                    else if (terlaris == "Bulan Ini")
+                    {
+                        count = ctx.tbl_detail_order.Where(o => o.is_active == 1 &&
+                        o.created_date >= DateTime.Now.AddMonths(-1) &&
+                        o.created_date <= DateTime.Now && o.id_menu == menuId).Count();
+                    }
+                    else
+                    {
+                        count = ctx.tbl_detail_order.Where(o => o.is_active == 1 && o.id_menu == menuId).Count();
+                    }
+                    
                     var menuWCount = new MenuWithCount
                     {
                         IdMenu = menuId.Value,
@@ -260,14 +278,14 @@ namespace Restoran
 
         private void btn_makanan_Click(object sender, EventArgs e)
         {
-            MenuMapping(1, 0, 3);
+            MenuMapping(1, terlarisFilter, 0, 3);
             jenis = 1;
             pageNow = 1;
         }
 
         private void btn_minuman_Click(object sender, EventArgs e)
         {
-            MenuMapping(2, 0, 3);
+            MenuMapping(2, terlarisFilter, 0, 3);
             jenis = 2;
             pageNow = 1;
         }
@@ -275,13 +293,13 @@ namespace Restoran
         private void btn_next_page_Click(object sender, EventArgs e)
         {
             pageNow = pageNow + 1;
-            MenuMapping(jenis, pageNow, 3);
+            MenuMapping(jenis, terlarisFilter, pageNow, 3);
         }
 
         private void btn_back_page_Click(object sender, EventArgs e)
         {
             pageNow = pageNow - 1;
-            MenuMapping(jenis, pageNow, 3);
+            MenuMapping(jenis, terlarisFilter,pageNow, 3);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -291,6 +309,7 @@ namespace Restoran
             //    created_by = "user",
             //    created_date = DateTime.Now,
             //    no_meja = no_meja.Text,
+            //    subtotal = 
             //};
 
             //var detailOrder = new tbl_detail_order
@@ -301,16 +320,10 @@ namespace Restoran
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var jenis = 0;
+            terlarisFilter = this.comboBox1.SelectedItem.ToString();
+            MenuMapping(jenis, this.comboBox1.SelectedItem.ToString(), pageNow, 3);
             
-            if (this.comboBox1.SelectedItem == "Minggu Ini")
-            {
-                jenis = 1;
-            }
-            else if (this.comboBox1.SelectedItem == "Bulan Ini")
-            {
-                jenis = 2;
-            }
+         
         }
     }
 }
