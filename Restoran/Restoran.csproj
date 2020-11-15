@@ -80,6 +80,7 @@
       <DependentUpon>menu_admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\MenuWithCount.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="restoran_data_model.Context.cs">

@@ -17,15 +17,21 @@ namespace Restoran
         {
             InitializeComponent();
         }
-
+        public int? idHapus;
+        public List<Order> listOrder;
         public int jenis;
         public int pageNow;
+        public string terlarisFilter;
 
         public void Initial()
         {
-            MenuMapping(1, 0, 3);
+            idHapus = null;
+            listOrder = new List<Order>();
+            terlarisFilter = "";
+            MappingToDataGrid();
+            MenuMapping(1, terlarisFilter, 0, 3);
             jenis = 1;
-            pageNow = 1;
+            pageNow = 0;
         }
         private void btn_menu_admin_Click(object sender, EventArgs e)
         {
@@ -37,10 +43,31 @@ namespace Restoran
 
            
         }
-        public void MenuMapping(int jenis,int page = 0,int size = 3)
+        public void MappingToDataGrid()
+        {
+      
+            dataGridView1.ClearSelection();
+            DataTable table = new DataTable();
+            table.Columns.Add("No Meja", typeof(string));
+            table.Columns.Add("Nama Menu", typeof(string));
+            //table.Columns.Add("Jenis", typeof(string));
+            table.Columns.Add("Harga Satuan", typeof(decimal));
+            table.Columns.Add("Harga Total", typeof(decimal));
+            table.Columns.Add("Qty", typeof(string));
+
+          
+            foreach (var menu in listOrder)
+            {             
+                table.Rows.Add(menu.no_meja, menu.nama_menu, menu.harga_satuan,
+                    menu.harga_total, menu.qty);
+            }
+
+            dataGridView1.DataSource = table;
+        }
+        public void MenuMapping(int jenis, string terlaris , int page = 0,int size = 3)
         {
             var menus = GetMenu(jenis, page, size);
-            var menuTerlaris = GetMenuTerlaris(jenis, 0, 3);
+            var menuTerlaris = GetMenuTerlaris(jenis,terlaris, 0, 3);
             for (int i = 0; i <= 5; i++)
             {
                 if (i >= 0 && i <= 2)
@@ -64,8 +91,10 @@ namespace Restoran
                         {
                             imageMenu.BackgroundImage = null;
                         }
+                        namaMenu.Tag = menuTerlaris[i].id.ToString();
                         namaMenu.Text = menuTerlaris[i].nama_menu;
                         hargaMenu.Text = menuTerlaris[i].harga_satuan.ToString();
+                        labelQty.Text = "0";
 
                         imageMenu.Visible = true;
                         namaMenu.Visible = true;
@@ -124,8 +153,10 @@ namespace Restoran
                         {
                             imageMenu.BackgroundImage = null;
                         }
+                        namaMenu.Tag = menus[index].id.ToString();
                         namaMenu.Text = menus[index].nama_menu;
                         hargaMenu.Text = menus[index].harga_satuan.ToString();
+                        labelQty.Text = "0";
 
                         imageMenu.Visible = true;
                         namaMenu.Visible = true;
@@ -195,7 +226,7 @@ namespace Restoran
                 return getMenu;
             }
         }
-        public List<tbl_menu> GetMenuTerlaris(int jenis, int page = 0, int size = 3)
+        public List<tbl_menu> GetMenuTerlaris(int jenis, string terlaris, int page = 0, int size = 3)
         {
             using (var ctx = new db_dataEntities())
             {
@@ -205,7 +236,26 @@ namespace Restoran
                 
                 foreach(var menuId in menuIds)
                 {
-                    var count = ctx.tbl_detail_order.Where(o => o.is_active == 1 && o.id_menu == menuId).Count();
+                    var count = 0;
+                    if (terlaris == "Minggu Ini")
+                    {
+                        var date = DateTime.Now.AddDays(-7);
+                        count = ctx.tbl_detail_order.Where(o => o.is_active == 1 &&
+                        o.created_date >= date && o.created_date <= DateTime.Now && 
+                        o.id_menu == menuId).Count();
+                    }
+                    else if (terlaris == "Bulan Ini")
+                    {
+                        var date = DateTime.Now.AddMonths(-1);
+                        count = ctx.tbl_detail_order.Where(o => o.is_active == 1 &&
+                        o.created_date >= date &&
+                        o.created_date <= DateTime.Now && o.id_menu == menuId).Count();
+                    }
+                    else
+                    {
+                        count = ctx.tbl_detail_order.Where(o => o.is_active == 1 && o.id_menu == menuId).Count();
+                    }
+                    
                     var menuWCount = new MenuWithCount
                     {
                         IdMenu = menuId.Value,
@@ -260,14 +310,14 @@ namespace Restoran
 
         private void btn_makanan_Click(object sender, EventArgs e)
         {
-            MenuMapping(1, 0, 3);
+            MenuMapping(1, terlarisFilter, 0, 3);
             jenis = 1;
             pageNow = 1;
         }
 
         private void btn_minuman_Click(object sender, EventArgs e)
         {
-            MenuMapping(2, 0, 3);
+            MenuMapping(2, terlarisFilter, 0, 3);
             jenis = 2;
             pageNow = 1;
         }
@@ -275,42 +325,134 @@ namespace Restoran
         private void btn_next_page_Click(object sender, EventArgs e)
         {
             pageNow = pageNow + 1;
-            MenuMapping(jenis, pageNow, 3);
+            MenuMapping(jenis, terlarisFilter, pageNow, 3);
         }
 
         private void btn_back_page_Click(object sender, EventArgs e)
         {
             pageNow = pageNow - 1;
-            MenuMapping(jenis, pageNow, 3);
+            MenuMapping(jenis, terlarisFilter,pageNow, 3);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //var order = new tbl_order
-            //{
-            //    created_by = "user",
-            //    created_date = DateTime.Now,
-            //    no_meja = no_meja.Text,
-            //};
+            var subTotal = listOrder.Sum(o => o.harga_total);
+            foreach(var order in listOrder)
+            {
+            
 
-            //var detailOrder = new tbl_detail_order
-            //{
+                var detailOrder = new tbl_detail_order
+                {
+                    created_by = "user",
+                    created_date = DateTime.Now,
+                    id_order = order.id_order,
+                    id_menu = order.id_menu,
+                    qty = order.qty,
+                    harga_satuan = order.harga_satuan,
+                    harga_total = order.harga_total,
+                    is_active = 1
+                };
 
-            //};
+                using (var ctx = new db_dataEntities())
+                {
+                    ctx.tbl_detail_order.Add(detailOrder);
+                    ctx.SaveChanges();
+
+                
+                }
+
+         
+            }
+
+            if (listOrder.Count > 0)
+            {
+                var data = new tbl_order
+                {
+                    created_by = "user",
+                    created_date = DateTime.Now,
+                    no_meja = no_meja.Text,
+                    subtotal = subTotal,
+                    is_active = 1
+                };
+                using (var ctx = new db_dataEntities())
+                {
+                   
+                    ctx.tbl_order.Add(data);
+                    ctx.SaveChanges();
+                }
+
+                MessageBox.Show("Menu Telah Di Order");
+
+                Initial();
+            }
+     
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var jenis = 0;
+            terlarisFilter = this.comboBox1.SelectedItem.ToString();
+            MenuMapping(jenis, this.comboBox1.SelectedItem.ToString(), pageNow, 3);
             
-            if (this.comboBox1.SelectedItem == "Minggu Ini")
+         
+        }
+
+        private void btn_tambah_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= 5; i++)
             {
-                jenis = 1;
+
+                    var imageMenu = this.Controls.Find("pcb_menu" + i.ToString(), true).FirstOrDefault();
+                    var namaMenu = this.Controls.Find("lbl_menu" + i.ToString(), true).FirstOrDefault();
+                    var hargaMenu = this.Controls.Find("lbl_harga" + i.ToString(), true).FirstOrDefault();
+                    var label = this.Controls.Find("lbl" + i.ToString(), true).FirstOrDefault();
+                    var labelPcs = this.Controls.Find("lbl_pcs" + i.ToString(), true).FirstOrDefault();
+                    var labelOrder = this.Controls.Find("lbl_order" + i.ToString(), true).FirstOrDefault();
+                    var labelQty = this.Controls.Find("lbl_qty" + i.ToString(), true).FirstOrDefault();
+                    
+                if(int.Parse(labelQty.Text) > 0)
+                {
+                    var idMenu = namaMenu.Tag;
+                    var order = new Order
+                    {
+                        no_meja = no_meja.Text,
+                        nama_menu = namaMenu.Text,
+                        id_order = 1,
+                        id_menu = int.Parse(namaMenu.Tag.ToString()),
+                        qty = int.Parse(labelQty.Text),
+                        harga_satuan = decimal.Parse(lbl_harga2.Text),
+                        harga_total = decimal.Parse(lbl_harga2.Text) * decimal.Parse(labelQty.Text)
+                    };
+
+                    listOrder.Add(order);
+                }
             }
-            else if (this.comboBox1.SelectedItem == "Bulan Ini")
+            MappingToDataGrid();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+            if (e.RowIndex >= 0 && !string.IsNullOrEmpty(row.Cells[1].Value.ToString()))
+            {             
+                idHapus = e.RowIndex;
+            }
+        }
+
+        private void btn_hapus_Click(object sender, EventArgs e)
+        {
+            if (idHapus != null)
             {
-                jenis = 2;
+                listOrder.RemoveAt(idHapus.Value);
+                MappingToDataGrid();
             }
+            idHapus = null;
+            
         }
     }
 }
