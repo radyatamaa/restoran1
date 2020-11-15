@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btn_biling = new System.Windows.Forms.Button();
             this.btn_logout = new System.Windows.Forms.Button();
             this.btn_laporan = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_pembayaran = new System.Windows.Forms.Button();
             this.btn_menu = new System.Windows.Forms.Button();
-            this.btn_biling = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -61,49 +61,24 @@
             this.panel2.Size = new System.Drawing.Size(228, 529);
             this.panel2.TabIndex = 3;
             // 
-            // label1
+            // btn_biling
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(31, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Restoran Sushi Sherilyn";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(6, 529);
-            this.panel1.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(234, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(597, 31);
-            this.panel3.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(238, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 19);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Restoran Sushi Sherilyn";
+            this.btn_biling.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_biling.FlatAppearance.BorderSize = 0;
+            this.btn_biling.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_biling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_biling.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_biling.ForeColor = System.Drawing.Color.White;
+            this.btn_biling.Image = global::Restoran.Properties.Resources.pay;
+            this.btn_biling.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_biling.Location = new System.Drawing.Point(-2, 277);
+            this.btn_biling.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_biling.Name = "btn_biling";
+            this.btn_biling.Size = new System.Drawing.Size(228, 64);
+            this.btn_biling.TabIndex = 7;
+            this.btn_biling.Text = "Cetak Billing";
+            this.btn_biling.UseVisualStyleBackColor = true;
             // 
             // btn_logout
             // 
@@ -145,6 +120,17 @@
             this.btn_laporan.Text = "Laporan Penjualan\r\nHarian";
             this.btn_laporan.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(31, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Restoran Sushi Sherilyn";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
@@ -173,6 +159,7 @@
             this.btn_pembayaran.TabIndex = 4;
             this.btn_pembayaran.Text = "Pembayaran";
             this.btn_pembayaran.UseVisualStyleBackColor = true;
+            this.btn_pembayaran.Click += new System.EventHandler(this.btn_pembayaran_Click);
             // 
             // btn_menu
             // 
@@ -194,24 +181,38 @@
             this.btn_menu.UseVisualStyleBackColor = true;
             this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
             // 
-            // btn_biling
+            // panel1
             // 
-            this.btn_biling.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_biling.FlatAppearance.BorderSize = 0;
-            this.btn_biling.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_biling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_biling.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_biling.ForeColor = System.Drawing.Color.White;
-            this.btn_biling.Image = global::Restoran.Properties.Resources.pay;
-            this.btn_biling.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_biling.Location = new System.Drawing.Point(-2, 277);
-            this.btn_biling.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_biling.Name = "btn_biling";
-            this.btn_biling.Size = new System.Drawing.Size(228, 64);
-            this.btn_biling.TabIndex = 7;
-            this.btn_biling.Text = "Cetak Billing";
-            this.btn_biling.UseVisualStyleBackColor = true;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(6, 529);
+            this.panel1.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(234, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(597, 31);
+            this.panel3.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(238, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(180, 19);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Restoran Sushi Sherilyn";
             // 
             // menu_admin
             // 
@@ -226,9 +227,9 @@
             this.Load += new System.EventHandler(this.menu_admin_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
