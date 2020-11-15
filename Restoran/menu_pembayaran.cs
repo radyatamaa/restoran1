@@ -16,5 +16,10 @@ namespace Restoran
         {
             InitializeComponent();
         }
+
+        private void menu_pembayaran_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

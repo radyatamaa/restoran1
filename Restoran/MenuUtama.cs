@@ -346,6 +346,7 @@ namespace Restoran
                     created_date = DateTime.Now,
                     no_meja = no_meja.Text,
                     subtotal = subTotal,
+                    status = 0,
                     is_active = 1
                 };
                 using (var ctx = new db_dataEntities())

@@ -297,6 +297,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "menu_pembayaran";
             this.Text = "Menu Pembayaran";
+            this.Load += new System.EventHandler(this.menu_pembayaran_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
