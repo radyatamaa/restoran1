@@ -256,6 +256,7 @@
             this.btn_biling.TabIndex = 18;
             this.btn_biling.Text = "Cetak Billing/Struk";
             this.btn_biling.UseVisualStyleBackColor = true;
+            this.btn_biling.Click += new System.EventHandler(this.btn_biling_Click);
             // 
             // menu_pembayaran
             // 
