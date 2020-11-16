@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_biling = new System.Windows.Forms.Button();
             this.btn_logout = new System.Windows.Forms.Button();
             this.btn_laporan = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,7 +46,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel2.Controls.Add(this.btn_biling);
             this.panel2.Controls.Add(this.btn_logout);
             this.panel2.Controls.Add(this.btn_laporan);
             this.panel2.Controls.Add(this.label1);
@@ -61,25 +59,6 @@
             this.panel2.Size = new System.Drawing.Size(228, 529);
             this.panel2.TabIndex = 3;
             // 
-            // btn_biling
-            // 
-            this.btn_biling.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_biling.FlatAppearance.BorderSize = 0;
-            this.btn_biling.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_biling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_biling.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_biling.ForeColor = System.Drawing.Color.White;
-            this.btn_biling.Image = global::Restoran.Properties.Resources.pay;
-            this.btn_biling.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_biling.Location = new System.Drawing.Point(-2, 277);
-            this.btn_biling.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_biling.Name = "btn_biling";
-            this.btn_biling.Size = new System.Drawing.Size(228, 64);
-            this.btn_biling.TabIndex = 7;
-            this.btn_biling.Text = "Cetak Billing";
-            this.btn_biling.UseVisualStyleBackColor = true;
-            // 
             // btn_logout
             // 
             this.btn_logout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -91,7 +70,7 @@
             this.btn_logout.ForeColor = System.Drawing.Color.White;
             this.btn_logout.Image = global::Restoran.Properties.Resources.analytics;
             this.btn_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_logout.Location = new System.Drawing.Point(-2, 420);
+            this.btn_logout.Location = new System.Drawing.Point(0, 361);
             this.btn_logout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_logout.Name = "btn_logout";
             this.btn_logout.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -112,13 +91,14 @@
             this.btn_laporan.ForeColor = System.Drawing.Color.White;
             this.btn_laporan.Image = global::Restoran.Properties.Resources.analytics;
             this.btn_laporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_laporan.Location = new System.Drawing.Point(0, 346);
+            this.btn_laporan.Location = new System.Drawing.Point(0, 287);
             this.btn_laporan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_laporan.Name = "btn_laporan";
             this.btn_laporan.Size = new System.Drawing.Size(228, 64);
             this.btn_laporan.TabIndex = 5;
             this.btn_laporan.Text = "Laporan Penjualan\r\nHarian";
             this.btn_laporan.UseVisualStyleBackColor = true;
+            this.btn_laporan.Click += new System.EventHandler(this.btn_laporan_Click);
             // 
             // label1
             // 
@@ -246,6 +226,5 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_logout;
-        private System.Windows.Forms.Button btn_biling;
     }
 }

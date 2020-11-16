@@ -289,7 +289,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
+        <DataSetName>DataTableBilling</DataSetName>
         <Top>0.8425in</Top>
         <Left>0.155in</Left>
         <Height>0.5in</Height>
@@ -307,7 +307,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!no_meja.Value, "DataSet1")</Value>
+                <Value>=First(Fields!no_meja.Value, "DataTableBilling")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -367,7 +367,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!subtotal.Value, "DataSet1")</Value>
+                <Value>=First(Fields!subtotal.Value, "DataTableBilling")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -397,7 +397,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!total_bayar.Value, "DataSet1")</Value>
+                <Value>=First(Fields!total_bayar.Value, "DataTableBilling")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -427,7 +427,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!kembali.Value, "DataSet1")</Value>
+                <Value>=First(Fields!kembali.Value, "DataTableBilling")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -683,7 +683,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="DataTableBilling">
       <Query>
         <DataSourceName>DataSet_Billing</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -732,7 +732,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet_Billing</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\HATIM\Documents\GitHub\Restoran1\Restoran\DataSet_Billing.xsd</rd:SchemaPath>
+        <rd:SchemaPath>E:\radya\project\restoran1\Restoran\DataSet_Billing.xsd</rd:SchemaPath>
         <rd:TableName>DataTableBilling</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />

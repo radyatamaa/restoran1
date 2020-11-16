@@ -129,7 +129,7 @@ namespace Restoran
 
                     MessageBox.Show("Pembayaran Selesai");
 
-                    ID = 0;
+                    //ID = 0;
                     btn_bayar.Enabled = false;
                     btn_biling.Enabled = true;
 
@@ -157,6 +157,13 @@ namespace Restoran
             this.Hide();
 
             menu_admin frm2 = new menu_admin();
+            frm2.Show();
+        }
+
+        private void btn_biling_Click(object sender, EventArgs e)
+        {
+            menu_billing frm2 = new menu_billing();
+            frm2.ID = ID;
             frm2.Show();
         }
     }
