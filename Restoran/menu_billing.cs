@@ -16,5 +16,12 @@ namespace Restoran
         {
             InitializeComponent();
         }
+
+        private void menu_billing_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

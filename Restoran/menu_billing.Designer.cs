@@ -28,21 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.btn_kembali = new System.Windows.Forms.Button();
-            this.btn_cetak = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.DataSet_Billing = new Restoran.DataSet_Billing();
+            this.DataTableBillingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTableBillingBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 51);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(597, 190);
-            this.dataGridView1.TabIndex = 9;
             // 
             // btn_kembali
             // 
@@ -62,36 +56,53 @@
             this.btn_kembali.TabIndex = 10;
             this.btn_kembali.UseVisualStyleBackColor = true;
             // 
-            // btn_cetak
+            // reportViewer1
             // 
-            this.btn_cetak.Location = new System.Drawing.Point(1, 247);
-            this.btn_cetak.Name = "btn_cetak";
-            this.btn_cetak.Size = new System.Drawing.Size(75, 30);
-            this.btn_cetak.TabIndex = 11;
-            this.btn_cetak.Text = "Cetak";
-            this.btn_cetak.UseVisualStyleBackColor = true;
+            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.DataTableBillingBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Restoran.Report_Billing.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(1, 51);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(826, 478);
+            this.reportViewer1.TabIndex = 12;
+            // 
+            // DataSet_Billing
+            // 
+            this.DataSet_Billing.DataSetName = "DataSet_Billing";
+            this.DataSet_Billing.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // DataTableBillingBindingSource
+            // 
+            this.DataTableBillingBindingSource.DataMember = "DataTableBilling";
+            this.DataTableBillingBindingSource.DataSource = this.DataSet_Billing;
             // 
             // menu_billing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(831, 529);
-            this.Controls.Add(this.btn_cetak);
+            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.btn_kembali);
-            this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "menu_billing";
             this.Text = "menu_billing";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.menu_billing_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTableBillingBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_kembali;
-        private System.Windows.Forms.Button btn_cetak;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource DataTableBillingBindingSource;
+        private DataSet_Billing DataSet_Billing;
     }
 }
