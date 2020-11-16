@@ -37,5 +37,13 @@ namespace Restoran
         {
 
         }
+
+        private void btn_kembali_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            menu_admin frm2 = new menu_admin();
+            frm2.Show();
+        }
     }
 }

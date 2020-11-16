@@ -53,5 +53,13 @@ namespace Restoran
             menu_pembayaran frm2 = new menu_pembayaran();
             frm2.Show();
         }
+
+        private void btn_laporan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            menu_laporan frm2 = new menu_laporan();
+            frm2.Show();
+        }
     }
 }
