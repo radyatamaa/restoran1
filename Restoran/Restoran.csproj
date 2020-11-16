@@ -58,6 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet_Billing.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Billing.xsd</DependentUpon>
+    </Compile>
     <Compile Include="db_dataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -164,6 +169,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report_Billing.rdlc" />
+    <None Include="DataSet_Billing.xsc">
+      <DependentUpon>DataSet_Billing.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Billing.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Billing.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Billing.xss">
+      <DependentUpon>DataSet_Billing.xsd</DependentUpon>
+    </None>
     <None Include="db_dataDataSet.xsc">
       <DependentUpon>db_dataDataSet.xsd</DependentUpon>
     </None>
