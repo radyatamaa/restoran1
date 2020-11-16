@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.DataTableBillingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataSet_Billing = new Restoran.DataSet_Billing();
             this.btn_kembali = new System.Windows.Forms.Button();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.DataSet_Billing = new Restoran.DataSet_Billing();
-            this.DataTableBillingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTableBillingBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).BeginInit();
             this.SuspendLayout();
+            // 
+            // DataTableBillingBindingSource
+            // 
+            this.DataTableBillingBindingSource.DataMember = "DataTableBilling";
+            this.DataTableBillingBindingSource.DataSource = this.DataSet_Billing;
+            // 
+            // DataSet_Billing
+            // 
+            this.DataSet_Billing.DataSetName = "DataSet_Billing";
+            this.DataSet_Billing.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btn_kembali
             // 
@@ -65,21 +75,11 @@
             reportDataSource1.Value = this.DataTableBillingBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Restoran.Report_Billing.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(1, 51);
+            this.reportViewer1.Location = new System.Drawing.Point(1, 66);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(826, 478);
+            this.reportViewer1.Size = new System.Drawing.Size(826, 463);
             this.reportViewer1.TabIndex = 12;
-            // 
-            // DataSet_Billing
-            // 
-            this.DataSet_Billing.DataSetName = "DataSet_Billing";
-            this.DataSet_Billing.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // DataTableBillingBindingSource
-            // 
-            this.DataTableBillingBindingSource.DataMember = "DataTableBilling";
-            this.DataTableBillingBindingSource.DataSource = this.DataSet_Billing;
             // 
             // menu_billing
             // 
@@ -93,8 +93,8 @@
             this.Name = "menu_billing";
             this.Text = "menu_billing";
             this.Load += new System.EventHandler(this.menu_billing_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTableBillingBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).EndInit();
             this.ResumeLayout(false);
 
         }

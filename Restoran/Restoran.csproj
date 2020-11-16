@@ -113,6 +113,12 @@
     <Compile Include="menu_billing.Designer.cs">
       <DependentUpon>menu_billing.cs</DependentUpon>
     </Compile>
+    <Compile Include="menu_laporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_laporan.Designer.cs">
+      <DependentUpon>menu_laporan.cs</DependentUpon>
+    </Compile>
     <Compile Include="menu_pembayaran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     <EmbeddedResource Include="menu_billing.resx">
       <DependentUpon>menu_billing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="menu_laporan.resx">
+      <DependentUpon>menu_laporan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="menu_pembayaran.resx">
       <DependentUpon>menu_pembayaran.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +195,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Report_Billing.rdlc" />
+    <EmbeddedResource Include="Report_Laporan.rdlc" />
     <None Include="DataSet_Billing.xsc">
       <DependentUpon>DataSet_Billing.xsd</DependentUpon>
     </None>
