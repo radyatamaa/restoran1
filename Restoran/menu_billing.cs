@@ -23,7 +23,6 @@ namespace Restoran
         private void menu_billing_Load(object sender, EventArgs e)
         {
 
-            //this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
             LoadReport();
         }
@@ -63,18 +62,7 @@ namespace Restoran
                     {
                         var menu = ctx.tbl_menu.Where(o => o.id == detailOrder.id_menu).FirstOrDefault();
                         row = ds.Tables["DataTableBilling"].NewRow();
-                        //DataTable table = new DataTable();
-
-                        //table.Rows.Add(getOrder.id,
-                        //getOrder.no_meja,
-                        //menu.nama_menu,
-                        // detailOrder.qty,
-                        // menu.harga_satuan,
-                        //detailOrder.harga_total,
-                        //getOrder.subtotal,
-                        // getOrder.total_bayar,
-                        //getOrder.kembali,
-                        //status);
+                        
                         row[0] = getOrder.id.ToString();
                         row[1] = getOrder.no_meja.ToString();
                         row[2] = menu.nama_menu.ToString();
