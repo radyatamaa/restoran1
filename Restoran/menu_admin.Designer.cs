@@ -204,6 +204,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "menu_admin";
             this.Text = "Menu Admin";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.menu_admin_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
