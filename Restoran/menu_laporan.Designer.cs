@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.DataTableLaporanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSet_Billing = new Restoran.DataSet_Billing();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -42,8 +42,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_laporan = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_kembali = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_kembali = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataTableLaporanBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).BeginInit();
             this.panel3.SuspendLayout();
@@ -66,9 +66,9 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.DataTableLaporanBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource6.Name = "DataSet1";
+            reportDataSource6.Value = this.DataTableLaporanBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource6);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Restoran.Report_Laporan.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(234, 172);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(5);
@@ -182,6 +182,16 @@
             this.panel2.Size = new System.Drawing.Size(228, 529);
             this.panel2.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
+            this.pictureBox1.Location = new System.Drawing.Point(34, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // btn_kembali
             // 
             this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -201,16 +211,6 @@
             this.btn_kembali.UseVisualStyleBackColor = true;
             this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 58);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 76);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // menu_laporan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -227,7 +227,6 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "menu_laporan";
             this.Text = "menu_laporan";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.menu_laporan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataTableLaporanBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).EndInit();

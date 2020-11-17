@@ -369,7 +369,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "kelola_menu";
             this.Text = "Kelola Manu";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.kelola_menu_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
