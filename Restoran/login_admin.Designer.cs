@@ -71,9 +71,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(182, 38);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 17);
+            this.label3.Size = new System.Drawing.Size(83, 17);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Login Admin";
+            this.label3.Text = "Form Login ";
             // 
             // label2
             // 
@@ -121,7 +121,7 @@
             this.btn_kembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_kembali.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_kembali.ForeColor = System.Drawing.Color.White;
-            this.btn_kembali.Image = global::Restoran.Properties.Resources.undo;
+            this.btn_kembali.Image = global::Restoran.Properties.Resources.left_arrow;
             this.btn_kembali.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_kembali.Location = new System.Drawing.Point(31, 25);
             this.btn_kembali.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
@@ -135,7 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(825, 520);
             this.Controls.Add(this.btn_kembali);
             this.Controls.Add(this.panel1);

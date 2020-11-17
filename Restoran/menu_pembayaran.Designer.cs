@@ -55,7 +55,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel3.BackColor = System.Drawing.Color.Blue;
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(234, 0);
@@ -72,13 +72,13 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(238, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 19);
+            this.label2.Size = new System.Drawing.Size(188, 19);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Restoran Sushi Sherilyn";
+            this.label2.Text = "Restoran Ayam Geprek";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.btn_kembali);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -99,7 +99,7 @@
             this.btn_kembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_kembali.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_kembali.ForeColor = System.Drawing.Color.White;
-            this.btn_kembali.Image = global::Restoran.Properties.Resources.undo;
+            this.btn_kembali.Image = global::Restoran.Properties.Resources.left_arrow;
             this.btn_kembali.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_kembali.Location = new System.Drawing.Point(9, 6);
             this.btn_kembali.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
@@ -116,13 +116,13 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(31, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 17);
+            this.label1.Size = new System.Drawing.Size(156, 17);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Restoran Sushi Sherilyn";
+            this.label1.Text = "Restoran Ayam Geprek";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
+            this.pictureBox1.Image = global::Restoran.Properties.Resources.logo_toko;
             this.pictureBox1.Location = new System.Drawing.Point(38, 67);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(131, 76);
@@ -139,19 +139,19 @@
             this.btn_pembayaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_pembayaan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_pembayaan.ForeColor = System.Drawing.Color.White;
-            this.btn_pembayaan.Image = global::Restoran.Properties.Resources.pay;
+            this.btn_pembayaan.Image = global::Restoran.Properties.Resources.bill__1_;
             this.btn_pembayaan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_pembayaan.Location = new System.Drawing.Point(0, 176);
             this.btn_pembayaan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_pembayaan.Name = "btn_pembayaan";
             this.btn_pembayaan.Size = new System.Drawing.Size(228, 64);
             this.btn_pembayaan.TabIndex = 4;
-            this.btn_pembayaan.Text = "Pembayaran";
+            this.btn_pembayaan.Text = "Transaksi";
             this.btn_pembayaan.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.Blue;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

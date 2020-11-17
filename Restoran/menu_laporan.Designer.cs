@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.DataTableLaporanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSet_Billing = new Restoran.DataSet_Billing();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -40,12 +40,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_laporan = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_kembali = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
+            this.btn_kembali = new System.Windows.Forms.Button();
+            this.btn_laporan = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.DataTableLaporanBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).BeginInit();
             this.panel3.SuspendLayout();
@@ -68,9 +68,9 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.DataTableLaporanBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource3.Name = "DataSet1";
+            reportDataSource3.Value = this.DataTableLaporanBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Restoran.Report_Laporan.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(234, 172);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(5);
@@ -110,7 +110,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.Blue;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -132,7 +132,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel3.BackColor = System.Drawing.Color.Blue;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(234, 0);
@@ -152,28 +152,9 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Restoran Sushi Sherilyn";
             // 
-            // btn_laporan
-            // 
-            this.btn_laporan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_laporan.FlatAppearance.BorderSize = 0;
-            this.btn_laporan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_laporan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_laporan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_laporan.ForeColor = System.Drawing.Color.White;
-            this.btn_laporan.Image = global::Restoran.Properties.Resources.analytics;
-            this.btn_laporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_laporan.Location = new System.Drawing.Point(-2, 172);
-            this.btn_laporan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_laporan.Name = "btn_laporan";
-            this.btn_laporan.Size = new System.Drawing.Size(228, 64);
-            this.btn_laporan.TabIndex = 5;
-            this.btn_laporan.Text = "Laporan Penjualan\r\nHarian";
-            this.btn_laporan.UseVisualStyleBackColor = true;
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.btn_kembali);
             this.panel2.Controls.Add(this.btn_laporan);
             this.panel2.Controls.Add(this.label2);
@@ -184,35 +165,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(228, 529);
             this.panel2.TabIndex = 5;
-            // 
-            // btn_kembali
-            // 
-            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_kembali.FlatAppearance.BorderSize = 0;
-            this.btn_kembali.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_kembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_kembali.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_kembali.ForeColor = System.Drawing.Color.White;
-            this.btn_kembali.Image = global::Restoran.Properties.Resources.undo;
-            this.btn_kembali.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_kembali.Location = new System.Drawing.Point(18, 7);
-            this.btn_kembali.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.btn_kembali.Name = "btn_kembali";
-            this.btn_kembali.Size = new System.Drawing.Size(76, 41);
-            this.btn_kembali.TabIndex = 6;
-            this.btn_kembali.UseVisualStyleBackColor = true;
-            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 58);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 76);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // dateTimePicker2
             // 
@@ -230,6 +182,54 @@
             this.label4.Size = new System.Drawing.Size(34, 21);
             this.label4.TabIndex = 8;
             this.label4.Text = "s/d";
+            // 
+            // btn_kembali
+            // 
+            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_kembali.FlatAppearance.BorderSize = 0;
+            this.btn_kembali.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_kembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_kembali.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_kembali.ForeColor = System.Drawing.Color.White;
+            this.btn_kembali.Image = global::Restoran.Properties.Resources.left_arrow;
+            this.btn_kembali.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_kembali.Location = new System.Drawing.Point(18, 7);
+            this.btn_kembali.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.btn_kembali.Name = "btn_kembali";
+            this.btn_kembali.Size = new System.Drawing.Size(76, 41);
+            this.btn_kembali.TabIndex = 6;
+            this.btn_kembali.UseVisualStyleBackColor = true;
+            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
+            // 
+            // btn_laporan
+            // 
+            this.btn_laporan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_laporan.FlatAppearance.BorderSize = 0;
+            this.btn_laporan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_laporan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_laporan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_laporan.ForeColor = System.Drawing.Color.White;
+            this.btn_laporan.Image = global::Restoran.Properties.Resources.diet;
+            this.btn_laporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_laporan.Location = new System.Drawing.Point(-2, 172);
+            this.btn_laporan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_laporan.Name = "btn_laporan";
+            this.btn_laporan.Size = new System.Drawing.Size(228, 64);
+            this.btn_laporan.TabIndex = 5;
+            this.btn_laporan.Text = "Laporan Penjualan\r\n";
+            this.btn_laporan.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
+            this.pictureBox1.Location = new System.Drawing.Point(34, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // menu_laporan
             // 
