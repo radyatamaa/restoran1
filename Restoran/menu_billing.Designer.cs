@@ -92,6 +92,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "menu_billing";
             this.Text = "menu_billing";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.menu_billing_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataTableBillingBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).EndInit();
