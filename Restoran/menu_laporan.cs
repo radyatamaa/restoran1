@@ -35,8 +35,11 @@ namespace Restoran
         {
 
         }
-        public void LoadReport(DateTime orderDate)
+        public void LoadReport(DateTime startDate, DateTime endDate)
         {
+            reportViewer1.LocalReport.DataSources.Clear();
+            //reportViewer1.LocalReport.DataSources.Add(rptds);
+            reportViewer1.LocalReport.Refresh();
             ReportDataSource rptDS;
             this.reportViewer1.RefreshReport();
             try
@@ -49,10 +52,9 @@ namespace Restoran
                 var da = new SqlDataAdapter();
 
 
-
                 using (var ctx = new db_dataEntities())
                 {
-                    var listOrder = ctx.tbl_order.Where(o => EntityFunctions.TruncateTime(o.created_date.Value) == orderDate.Date).ToList();
+                    var listOrder = ctx.tbl_order.Where(o => EntityFunctions.TruncateTime(o.created_date.Value) >= startDate.Date && EntityFunctions.TruncateTime(o.created_date.Value) <= endDate.Date).ToList();
 
                     foreach(var getOrder in listOrder)
                     {
@@ -111,8 +113,9 @@ namespace Restoran
 
         private void btn_cetak_Click(object sender, EventArgs e)
         {
-            var date = DateTime.Parse(dateTimePicker1.Text);
-            LoadReport(date);
+            var startDate = DateTime.Parse(dateTimePicker1.Text);
+            var endDate = DateTime.Parse(dateTimePicker2.Text);
+            LoadReport(startDate,endDate);
         }
 
         private void btn_kembali_Click(object sender, EventArgs e)

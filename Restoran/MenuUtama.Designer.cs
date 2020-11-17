@@ -306,7 +306,7 @@
             // btn_hapus
             // 
             this.btn_hapus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_hapus.Location = new System.Drawing.Point(828, 25);
+            this.btn_hapus.Location = new System.Drawing.Point(793, 25);
             this.btn_hapus.Name = "btn_hapus";
             this.btn_hapus.Size = new System.Drawing.Size(132, 71);
             this.btn_hapus.TabIndex = 56;
@@ -317,7 +317,7 @@
             // btn_tambah
             // 
             this.btn_tambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_tambah.Location = new System.Drawing.Point(981, 22);
+            this.btn_tambah.Location = new System.Drawing.Point(942, 25);
             this.btn_tambah.Name = "btn_tambah";
             this.btn_tambah.Size = new System.Drawing.Size(132, 71);
             this.btn_tambah.TabIndex = 55;
@@ -328,9 +328,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(575, 99);
+            this.dataGridView1.Location = new System.Drawing.Point(576, 99);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(557, 268);
+            this.dataGridView1.Size = new System.Drawing.Size(536, 268);
             this.dataGridView1.TabIndex = 54;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -392,7 +392,7 @@
             // btn_order
             // 
             this.btn_order.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_order.Location = new System.Drawing.Point(997, 382);
+            this.btn_order.Location = new System.Drawing.Point(942, 373);
             this.btn_order.Name = "btn_order";
             this.btn_order.Size = new System.Drawing.Size(132, 71);
             this.btn_order.TabIndex = 48;
@@ -775,10 +775,11 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Minggu Ini",
             "Bulan Ini"});
-            this.comboBox1.Location = new System.Drawing.Point(147, 17);
+            this.comboBox1.Location = new System.Drawing.Point(253, 17);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(117, 29);
             this.comboBox1.TabIndex = 11;
+            this.comboBox1.Visible = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label8
@@ -786,9 +787,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(24, 20);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 21);
+            this.label8.Size = new System.Drawing.Size(118, 21);
             this.label8.TabIndex = 10;
-            this.label8.Text = "Menu Terlaris";
+            this.label8.Text = "Menu Terlaris :";
             // 
             // lbl_order0
             // 

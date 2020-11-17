@@ -17,7 +17,7 @@ namespace Restoran
         {
             InitializeComponent();
         }
-        public int? idHapus;
+        public List<int?> idHapus;
         public List<Order> listOrder;
         public int jenis;
         public int pageNow;
@@ -25,7 +25,7 @@ namespace Restoran
 
         public void Initial()
         {
-            idHapus = null;
+            idHapus = new List<int?>();
             listOrder = new List<Order>();
             terlarisFilter = "";
             MappingToDataGrid();
@@ -83,7 +83,7 @@ namespace Restoran
                     try
                     {
                         var menu = menuTerlaris[i];
-                        if (menuTerlaris[i].foto != null)
+                        if (!string.IsNullOrEmpty(menuTerlaris[i].foto))
                         {
                             imageMenu.BackgroundImage = new Bitmap(menuTerlaris[i].foto);
                         }
@@ -145,9 +145,17 @@ namespace Restoran
                         }
 
                         var menu = menus[index];
-                        if (menus[index].foto != null)
+                        if (!string.IsNullOrEmpty(menus[index].foto))
                         {
-                            imageMenu.BackgroundImage = new Bitmap(menus[index].foto);
+                            try
+                            {
+                                imageMenu.BackgroundImage = new Bitmap(menus[index].foto);
+                            }
+                            catch (Exception e)
+                            {
+                                imageMenu.BackgroundImage = null;
+                            }
+                           
                         }
                         else
                         {
@@ -447,21 +455,44 @@ namespace Restoran
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-            if (e.RowIndex >= 0 && !string.IsNullOrEmpty(row.Cells[1].Value.ToString()))
-            {             
-                idHapus = e.RowIndex;
+            idHapus.Clear();
+            DataGridViewSelectedRowCollection rowList = dataGridView1.SelectedRows;
+            foreach(DataGridViewRow index in rowList)
+            {
+                DataGridViewRow row = dataGridView1.Rows[index.Index];
+                
+                if(row.Cells[1].Value != null)
+                {
+                    if (index.Index >= 0 && !string.IsNullOrEmpty(row.Cells[1].Value.ToString()))
+                    {
+                        idHapus.Add(index.Index);
+                    }
+                }
+                
             }
+           
         }
 
         private void btn_hapus_Click(object sender, EventArgs e)
         {
-            if (idHapus != null)
+            if (idHapus.Count > 0)
             {
-                listOrder.RemoveAt(idHapus.Value);
+                foreach(var idhapuss in idHapus)
+                {
+                    try
+                    {
+                        listOrder.RemoveAt(idhapuss.Value);
+                    }
+                    catch(Exception ex)
+                    {
+                        //listOrder.RemoveAt(idhapuss.Value);
+                    }
+                    
+                   
+                }
                 MappingToDataGrid();
             }
-            idHapus = null;
+            idHapus.Clear();
             
         }
     }

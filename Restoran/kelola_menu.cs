@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.Entity.Migrations;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.Caching;
 using System.Text;
 using System.Threading.Tasks;
@@ -101,6 +102,7 @@ namespace Restoran
             {
                 jenis = 2;
             }
+          
             var menu = new tbl_menu()
             {
                 is_active = 1,
@@ -132,51 +134,63 @@ namespace Restoran
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-            if (e.RowIndex >= 0 && !string.IsNullOrEmpty(row.Cells[0].Value.ToString()))
+            if(e.RowIndex != -1)
             {
-              
-                var id = int.Parse(row.Cells[0].Value.ToString());
-                using (var ctx = new db_dataEntities())
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                if (e.RowIndex >= 0 && !string.IsNullOrEmpty(row.Cells[0].Value.ToString()))
                 {
-                    var menu = ctx.tbl_menu.Where(o => o.id == id).FirstOrDefault();
-                    this.txt_nama_menu.Text = menu.nama_menu;
-                    this.txt_harga.Text = menu.harga_satuan.ToString();
-                    this.txt_keterangan.Text = menu.keterangan;
-                    this.txt_foto.Text = menu.foto;
-                    if (!string.IsNullOrEmpty(menu.foto))
+
+                    var id = int.Parse(row.Cells[0].Value.ToString());
+                    using (var ctx = new db_dataEntities())
                     {
-                        // display image in picture box  
-                        pictureBox2.Image = new Bitmap(menu.foto);
-                    }
-                    else
-                    {
-                        pictureBox2.Image = null;
-                    }
-                    foreach(var jenis in this.cmb_jenis.Items)
-                    {
-                        var namaJenis = "";
-                        if (menu.jenis == 1)
+                        var menu = ctx.tbl_menu.Where(o => o.id == id).FirstOrDefault();
+                        this.txt_nama_menu.Text = menu.nama_menu;
+                        this.txt_harga.Text = menu.harga_satuan.ToString();
+                        this.txt_keterangan.Text = menu.keterangan;
+                        this.txt_foto.Text = menu.foto;
+                        if (!string.IsNullOrEmpty(menu.foto))
                         {
-                            namaJenis = "Makanan";
+                            // display image in picture box  
+                            try
+                            {
+                                pictureBox2.Image = new Bitmap(menu.foto);
+                            }
+                            catch (Exception ex)
+                            {
+                                pictureBox2.Image = null;
+                            }
+
                         }
-                        else if (menu.jenis == 2)
+                        else
                         {
-                            namaJenis = "Minuman";
+                            pictureBox2.Image = null;
+                        }
+                        foreach (var jenis in this.cmb_jenis.Items)
+                        {
+                            var namaJenis = "";
+                            if (menu.jenis == 1)
+                            {
+                                namaJenis = "Makanan";
+                            }
+                            else if (menu.jenis == 2)
+                            {
+                                namaJenis = "Minuman";
+                            }
+
+                            if (namaJenis == jenis)
+                            {
+                                this.cmb_jenis.SelectedItem = jenis.ToString();
+                            }
                         }
 
-                        if(namaJenis == jenis)
-                        {
-                            this.cmb_jenis.SelectedItem = jenis.ToString();
-                        }
                     }
-                  
+                    ID = id;
+                    this.btn_simpan.Enabled = false;
+                    this.btn_update.Enabled = true;
+                    this.btn_hapus.Enabled = true;
                 }
-                ID = id;
-                this.btn_simpan.Enabled = false;
-                this.btn_update.Enabled = true;
-                this.btn_hapus.Enabled = true;
             }
+
         }
 
 
@@ -271,6 +285,7 @@ namespace Restoran
             {
                 // display image in picture box  
                 pictureBox2.Image = new Bitmap(open.FileName);
+           
                 // image file path  
                 this.txt_foto.Text = open.FileName;
             }

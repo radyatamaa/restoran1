@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.DataTableLaporanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSet_Billing = new Restoran.DataSet_Billing();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -42,8 +42,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_laporan = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_kembali = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataTableLaporanBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).BeginInit();
             this.panel3.SuspendLayout();
@@ -66,33 +68,34 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource6.Name = "DataSet1";
-            reportDataSource6.Value = this.DataTableLaporanBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource6);
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.DataTableLaporanBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Restoran.Report_Laporan.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(234, 172);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(5);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(592, 348);
+            this.reportViewer1.Size = new System.Drawing.Size(707, 348);
             this.reportViewer1.TabIndex = 0;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(412, 92);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(425, 92);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(277, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(227, 23);
             this.dateTimePicker1.TabIndex = 1;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(282, 97);
+            this.label1.Location = new System.Drawing.Point(241, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 21);
+            this.label1.Size = new System.Drawing.Size(178, 21);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Tanggal Order";
+            this.label1.Text = "Tanggal Mulai Order :";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_cetak
@@ -135,7 +138,7 @@
             this.panel3.Location = new System.Drawing.Point(234, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(597, 31);
+            this.panel3.Size = new System.Drawing.Size(712, 31);
             this.panel3.TabIndex = 6;
             // 
             // label2
@@ -182,16 +185,6 @@
             this.panel2.Size = new System.Drawing.Size(228, 529);
             this.panel2.TabIndex = 5;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 58);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 76);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // btn_kembali
             // 
             this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -211,11 +204,40 @@
             this.btn_kembali.UseVisualStyleBackColor = true;
             this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
+            this.pictureBox1.Location = new System.Drawing.Point(34, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(700, 92);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(234, 23);
+            this.dateTimePicker2.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(658, 94);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(34, 21);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "s/d";
+            // 
             // menu_laporan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(831, 529);
+            this.ClientSize = new System.Drawing.Size(946, 529);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -227,6 +249,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "menu_laporan";
             this.Text = "menu_laporan";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.menu_laporan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataTableLaporanBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet_Billing)).EndInit();
@@ -256,5 +279,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_kembali;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label4;
     }
 }
