@@ -281,7 +281,6 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "menu_pembayaran";
             this.Text = "Menu Pembayaran";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.menu_pembayaran_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
