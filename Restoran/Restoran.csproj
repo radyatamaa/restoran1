@@ -249,16 +249,10 @@
     <None Include="Resources\team-management.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sushi1dalam.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\undo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\food-serving.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sashimi.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\left-arrow.png" />

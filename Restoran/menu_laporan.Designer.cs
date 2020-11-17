@@ -223,7 +223,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
+            //this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
             this.pictureBox1.Location = new System.Drawing.Point(34, 58);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(131, 76);

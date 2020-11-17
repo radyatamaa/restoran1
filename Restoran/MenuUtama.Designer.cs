@@ -737,7 +737,7 @@
             // 
             // pcb_menu5
             // 
-            this.pcb_menu5.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
+            //this.pcb_menu5.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
             this.pcb_menu5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pcb_menu5.Location = new System.Drawing.Point(403, 355);
             this.pcb_menu5.Name = "pcb_menu5";
@@ -747,7 +747,7 @@
             // 
             // pcb_menu4
             // 
-            this.pcb_menu4.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
+            //this.pcb_menu4.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
             this.pcb_menu4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pcb_menu4.Location = new System.Drawing.Point(214, 355);
             this.pcb_menu4.Name = "pcb_menu4";
@@ -757,7 +757,7 @@
             // 
             // pcb_menu3
             // 
-            this.pcb_menu3.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
+            //this.pcb_menu3.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
             this.pcb_menu3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pcb_menu3.Location = new System.Drawing.Point(28, 355);
             this.pcb_menu3.Name = "pcb_menu3";
@@ -767,7 +767,7 @@
             // 
             // pcb_menu2
             // 
-            this.pcb_menu2.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
+            //this.pcb_menu2.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
             this.pcb_menu2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pcb_menu2.Location = new System.Drawing.Point(404, 55);
             this.pcb_menu2.Name = "pcb_menu2";
@@ -777,7 +777,7 @@
             // 
             // pcb_menu1
             // 
-            this.pcb_menu1.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
+            //this.pcb_menu1.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
             this.pcb_menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pcb_menu1.Location = new System.Drawing.Point(215, 55);
             this.pcb_menu1.Name = "pcb_menu1";
@@ -787,7 +787,7 @@
             // 
             // pcb_menu0
             // 
-            this.pcb_menu0.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
+            //this.pcb_menu0.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
             this.pcb_menu0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pcb_menu0.Location = new System.Drawing.Point(29, 55);
             this.pcb_menu0.Name = "pcb_menu0";
