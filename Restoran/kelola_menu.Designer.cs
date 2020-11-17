@@ -29,15 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_kembali = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_menu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_hapus = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_simpan = new System.Windows.Forms.Button();
@@ -54,17 +50,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_harga = new System.Windows.Forms.TextBox();
             this.txt_nama_menu = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_kembali = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_menu = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.btn_kembali);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -76,25 +76,6 @@
             this.panel2.Size = new System.Drawing.Size(228, 639);
             this.panel2.TabIndex = 6;
             // 
-            // btn_kembali
-            // 
-            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_kembali.FlatAppearance.BorderSize = 0;
-            this.btn_kembali.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_kembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_kembali.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_kembali.ForeColor = System.Drawing.Color.White;
-            this.btn_kembali.Image = global::Restoran.Properties.Resources.undo;
-            this.btn_kembali.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_kembali.Location = new System.Drawing.Point(27, 16);
-            this.btn_kembali.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.btn_kembali.Name = "btn_kembali";
-            this.btn_kembali.Size = new System.Drawing.Size(76, 41);
-            this.btn_kembali.TabIndex = 4;
-            this.btn_kembali.UseVisualStyleBackColor = true;
-            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -103,43 +84,13 @@
             this.label1.Location = new System.Drawing.Point(37, 172);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 17);
+            this.label1.Size = new System.Drawing.Size(92, 17);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Restoran Sushi Sherilyn";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 68);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 99);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_menu
-            // 
-            this.btn_menu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_menu.FlatAppearance.BorderSize = 0;
-            this.btn_menu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_menu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_menu.ForeColor = System.Drawing.Color.White;
-            this.btn_menu.Image = global::Restoran.Properties.Resources.food_serving;
-            this.btn_menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_menu.Location = new System.Drawing.Point(0, 205);
-            this.btn_menu.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.btn_menu.Name = "btn_menu";
-            this.btn_menu.Size = new System.Drawing.Size(228, 84);
-            this.btn_menu.TabIndex = 3;
-            this.btn_menu.Text = "Kelola Data Menu";
-            this.btn_menu.UseVisualStyleBackColor = true;
+            this.label1.Text = "Restoran Kue";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
@@ -149,7 +100,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel3.BackColor = System.Drawing.Color.Gray;
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(236, 0);
@@ -197,16 +148,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(613, 599);
             this.panel4.TabIndex = 8;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(139, 260);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(175, 99);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
             // 
             // btn_hapus
             // 
@@ -356,6 +297,65 @@
             this.txt_nama_menu.Size = new System.Drawing.Size(348, 23);
             this.txt_nama_menu.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(139, 260);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(175, 99);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btn_kembali
+            // 
+            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_kembali.FlatAppearance.BorderSize = 0;
+            this.btn_kembali.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_kembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_kembali.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_kembali.ForeColor = System.Drawing.Color.White;
+            this.btn_kembali.Image = global::Restoran.Properties.Resources.undo;
+            this.btn_kembali.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_kembali.Location = new System.Drawing.Point(27, 16);
+            this.btn_kembali.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.btn_kembali.Name = "btn_kembali";
+            this.btn_kembali.Size = new System.Drawing.Size(76, 41);
+            this.btn_kembali.TabIndex = 4;
+            this.btn_kembali.UseVisualStyleBackColor = true;
+            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Restoran.Properties.Resources.toko_kue;
+            this.pictureBox1.Location = new System.Drawing.Point(28, 68);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 99);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_menu
+            // 
+            this.btn_menu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_menu.FlatAppearance.BorderSize = 0;
+            this.btn_menu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_menu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_menu.ForeColor = System.Drawing.Color.White;
+            this.btn_menu.Image = global::Restoran.Properties.Resources.food_serving;
+            this.btn_menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_menu.Location = new System.Drawing.Point(0, 205);
+            this.btn_menu.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.btn_menu.Name = "btn_menu";
+            this.btn_menu.Size = new System.Drawing.Size(228, 84);
+            this.btn_menu.TabIndex = 3;
+            this.btn_menu.Text = "Kelola Data Menu";
+            this.btn_menu.UseVisualStyleBackColor = true;
+            // 
             // kelola_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -373,13 +373,13 @@
             this.Load += new System.EventHandler(this.kelola_menu_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

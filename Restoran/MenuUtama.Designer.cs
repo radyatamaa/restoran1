@@ -31,18 +31,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_menu_admin = new System.Windows.Forms.Button();
-            this.btn_minuman = new System.Windows.Forms.Button();
-            this.btn_makanan = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btn_hapus = new System.Windows.Forms.Button();
             this.btn_tambah = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_next_page = new System.Windows.Forms.Button();
-            this.btn_back_page = new System.Windows.Forms.Button();
             this.no_meja = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.btn_order = new System.Windows.Forms.Button();
@@ -52,35 +46,30 @@
             this.lbl_qty5 = new System.Windows.Forms.NumericUpDown();
             this.lbl_harga5 = new System.Windows.Forms.Label();
             this.lbl_menu5 = new System.Windows.Forms.Label();
-            this.pcb_menu5 = new System.Windows.Forms.PictureBox();
             this.lbl_order4 = new System.Windows.Forms.Label();
             this.lbl_pcs4 = new System.Windows.Forms.Label();
             this.lbl4 = new System.Windows.Forms.Label();
             this.lbl_qty4 = new System.Windows.Forms.NumericUpDown();
             this.lbl_harga4 = new System.Windows.Forms.Label();
             this.lbl_menu4 = new System.Windows.Forms.Label();
-            this.pcb_menu4 = new System.Windows.Forms.PictureBox();
             this.lbl_order3 = new System.Windows.Forms.Label();
             this.lbl_pcs3 = new System.Windows.Forms.Label();
             this.lbl3 = new System.Windows.Forms.Label();
             this.lbl_qty3 = new System.Windows.Forms.NumericUpDown();
             this.lbl_harga3 = new System.Windows.Forms.Label();
             this.lbl_menu3 = new System.Windows.Forms.Label();
-            this.pcb_menu3 = new System.Windows.Forms.PictureBox();
             this.lbl_order2 = new System.Windows.Forms.Label();
             this.lbl_pcs2 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl_qty2 = new System.Windows.Forms.NumericUpDown();
             this.lbl_harga2 = new System.Windows.Forms.Label();
             this.lbl_menu2 = new System.Windows.Forms.Label();
-            this.pcb_menu2 = new System.Windows.Forms.PictureBox();
             this.lbl_order1 = new System.Windows.Forms.Label();
             this.lbl_pcs1 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
             this.lbl_qty1 = new System.Windows.Forms.NumericUpDown();
             this.lbl_harga1 = new System.Windows.Forms.Label();
             this.lbl_menu1 = new System.Windows.Forms.Label();
-            this.pcb_menu1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -90,29 +79,40 @@
             this.lbl_qty0 = new System.Windows.Forms.NumericUpDown();
             this.lbl_harga0 = new System.Windows.Forms.Label();
             this.lbl_menu0 = new System.Windows.Forms.Label();
+            this.btn_next_page = new System.Windows.Forms.Button();
+            this.btn_back_page = new System.Windows.Forms.Button();
+            this.pcb_menu5 = new System.Windows.Forms.PictureBox();
+            this.pcb_menu4 = new System.Windows.Forms.PictureBox();
+            this.pcb_menu3 = new System.Windows.Forms.PictureBox();
+            this.pcb_menu2 = new System.Windows.Forms.PictureBox();
+            this.pcb_menu1 = new System.Windows.Forms.PictureBox();
             this.pcb_menu0 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_menu_admin = new System.Windows.Forms.Button();
+            this.btn_minuman = new System.Windows.Forms.Button();
+            this.btn_makanan = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_menu0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -122,7 +122,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btn_menu_admin);
@@ -142,83 +142,13 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(31, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 17);
+            this.label1.Size = new System.Drawing.Size(92, 17);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Restoran Sushi Sherilyn";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 76);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_menu_admin
-            // 
-            this.btn_menu_admin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_menu_admin.FlatAppearance.BorderSize = 0;
-            this.btn_menu_admin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_menu_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_menu_admin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_menu_admin.ForeColor = System.Drawing.Color.White;
-            this.btn_menu_admin.Image = global::Restoran.Properties.Resources.team_management;
-            this.btn_menu_admin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_menu_admin.Location = new System.Drawing.Point(0, 635);
-            this.btn_menu_admin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_menu_admin.Name = "btn_menu_admin";
-            this.btn_menu_admin.Size = new System.Drawing.Size(228, 64);
-            this.btn_menu_admin.TabIndex = 5;
-            this.btn_menu_admin.Text = "Menu Admin";
-            this.btn_menu_admin.UseVisualStyleBackColor = true;
-            this.btn_menu_admin.Click += new System.EventHandler(this.btn_menu_admin_Click);
-            // 
-            // btn_minuman
-            // 
-            this.btn_minuman.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_minuman.FlatAppearance.BorderSize = 0;
-            this.btn_minuman.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_minuman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_minuman.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_minuman.ForeColor = System.Drawing.Color.White;
-            this.btn_minuman.Image = global::Restoran.Properties.Resources.water;
-            this.btn_minuman.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_minuman.Location = new System.Drawing.Point(0, 213);
-            this.btn_minuman.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_minuman.Name = "btn_minuman";
-            this.btn_minuman.Size = new System.Drawing.Size(228, 64);
-            this.btn_minuman.TabIndex = 4;
-            this.btn_minuman.Text = "Minuman";
-            this.btn_minuman.UseVisualStyleBackColor = true;
-            this.btn_minuman.Click += new System.EventHandler(this.btn_minuman_Click);
-            // 
-            // btn_makanan
-            // 
-            this.btn_makanan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_makanan.FlatAppearance.BorderSize = 0;
-            this.btn_makanan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_makanan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_makanan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_makanan.ForeColor = System.Drawing.Color.White;
-            this.btn_makanan.Image = global::Restoran.Properties.Resources.makanan;
-            this.btn_makanan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_makanan.Location = new System.Drawing.Point(0, 140);
-            this.btn_makanan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_makanan.Name = "btn_makanan";
-            this.btn_makanan.Size = new System.Drawing.Size(228, 64);
-            this.btn_makanan.TabIndex = 3;
-            this.btn_makanan.Text = "Makanan";
-            this.btn_makanan.UseVisualStyleBackColor = true;
-            this.btn_makanan.Click += new System.EventHandler(this.btn_makanan_Click);
+            this.label1.Text = "Restoran Kue";
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel3.BackColor = System.Drawing.Color.Gray;
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(234, 0);
@@ -235,9 +165,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(238, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 19);
+            this.label2.Size = new System.Drawing.Size(108, 19);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Restoran Sushi Sherilyn";
+            this.label2.Text = "Restoran Kue";
             // 
             // panel4
             // 
@@ -245,6 +175,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.AutoScroll = true;
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.btn_hapus);
             this.panel4.Controls.Add(this.btn_tambah);
             this.panel4.Controls.Add(this.dataGridView1);
@@ -335,44 +266,6 @@
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // btn_next_page
-            // 
-            this.btn_next_page.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_next_page.FlatAppearance.BorderSize = 0;
-            this.btn_next_page.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_next_page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_next_page.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_next_page.ForeColor = System.Drawing.Color.Black;
-            this.btn_next_page.Image = global::Restoran.Properties.Resources.right_arrow;
-            this.btn_next_page.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_next_page.Location = new System.Drawing.Point(669, 604);
-            this.btn_next_page.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_next_page.Name = "btn_next_page";
-            this.btn_next_page.Size = new System.Drawing.Size(39, 64);
-            this.btn_next_page.TabIndex = 53;
-            this.btn_next_page.UseVisualStyleBackColor = true;
-            this.btn_next_page.Click += new System.EventHandler(this.btn_next_page_Click);
-            // 
-            // btn_back_page
-            // 
-            this.btn_back_page.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_back_page.FlatAppearance.BorderSize = 0;
-            this.btn_back_page.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_back_page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_back_page.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back_page.ForeColor = System.Drawing.Color.Black;
-            this.btn_back_page.Image = global::Restoran.Properties.Resources.left_arrow;
-            this.btn_back_page.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_back_page.Location = new System.Drawing.Point(592, 604);
-            this.btn_back_page.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_back_page.Name = "btn_back_page";
-            this.btn_back_page.Size = new System.Drawing.Size(46, 64);
-            this.btn_back_page.TabIndex = 52;
-            this.btn_back_page.UseVisualStyleBackColor = true;
-            this.btn_back_page.Click += new System.EventHandler(this.btn_back_page_Click);
-            // 
             // no_meja
             // 
             this.no_meja.Location = new System.Drawing.Point(576, 55);
@@ -462,16 +355,6 @@
             this.lbl_menu5.TabIndex = 42;
             this.lbl_menu5.Text = "Sashimi";
             // 
-            // pcb_menu5
-            // 
-            this.pcb_menu5.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
-            this.pcb_menu5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcb_menu5.Location = new System.Drawing.Point(403, 355);
-            this.pcb_menu5.Name = "pcb_menu5";
-            this.pcb_menu5.Size = new System.Drawing.Size(155, 109);
-            this.pcb_menu5.TabIndex = 41;
-            this.pcb_menu5.TabStop = false;
-            // 
             // lbl_order4
             // 
             this.lbl_order4.AutoSize = true;
@@ -533,16 +416,6 @@
             this.lbl_menu4.Size = new System.Drawing.Size(68, 19);
             this.lbl_menu4.TabIndex = 35;
             this.lbl_menu4.Text = "Sashimi";
-            // 
-            // pcb_menu4
-            // 
-            this.pcb_menu4.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
-            this.pcb_menu4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcb_menu4.Location = new System.Drawing.Point(214, 355);
-            this.pcb_menu4.Name = "pcb_menu4";
-            this.pcb_menu4.Size = new System.Drawing.Size(155, 109);
-            this.pcb_menu4.TabIndex = 34;
-            this.pcb_menu4.TabStop = false;
             // 
             // lbl_order3
             // 
@@ -606,16 +479,6 @@
             this.lbl_menu3.TabIndex = 28;
             this.lbl_menu3.Text = "Sashimi";
             // 
-            // pcb_menu3
-            // 
-            this.pcb_menu3.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
-            this.pcb_menu3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcb_menu3.Location = new System.Drawing.Point(28, 355);
-            this.pcb_menu3.Name = "pcb_menu3";
-            this.pcb_menu3.Size = new System.Drawing.Size(155, 109);
-            this.pcb_menu3.TabIndex = 27;
-            this.pcb_menu3.TabStop = false;
-            // 
             // lbl_order2
             // 
             this.lbl_order2.AutoSize = true;
@@ -678,16 +541,6 @@
             this.lbl_menu2.TabIndex = 21;
             this.lbl_menu2.Text = "Sashimi";
             // 
-            // pcb_menu2
-            // 
-            this.pcb_menu2.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
-            this.pcb_menu2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcb_menu2.Location = new System.Drawing.Point(404, 55);
-            this.pcb_menu2.Name = "pcb_menu2";
-            this.pcb_menu2.Size = new System.Drawing.Size(155, 109);
-            this.pcb_menu2.TabIndex = 20;
-            this.pcb_menu2.TabStop = false;
-            // 
             // lbl_order1
             // 
             this.lbl_order1.AutoSize = true;
@@ -749,16 +602,6 @@
             this.lbl_menu1.Size = new System.Drawing.Size(68, 19);
             this.lbl_menu1.TabIndex = 14;
             this.lbl_menu1.Text = "Sashimi";
-            // 
-            // pcb_menu1
-            // 
-            this.pcb_menu1.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
-            this.pcb_menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcb_menu1.Location = new System.Drawing.Point(215, 55);
-            this.pcb_menu1.Name = "pcb_menu1";
-            this.pcb_menu1.Size = new System.Drawing.Size(155, 109);
-            this.pcb_menu1.TabIndex = 13;
-            this.pcb_menu1.TabStop = false;
             // 
             // label9
             // 
@@ -855,6 +698,94 @@
             this.lbl_menu0.TabIndex = 1;
             this.lbl_menu0.Text = "Sashimi";
             // 
+            // btn_next_page
+            // 
+            this.btn_next_page.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_next_page.FlatAppearance.BorderSize = 0;
+            this.btn_next_page.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_next_page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_next_page.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_next_page.ForeColor = System.Drawing.Color.Black;
+            this.btn_next_page.Image = global::Restoran.Properties.Resources.right_arrow;
+            this.btn_next_page.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_next_page.Location = new System.Drawing.Point(669, 604);
+            this.btn_next_page.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_next_page.Name = "btn_next_page";
+            this.btn_next_page.Size = new System.Drawing.Size(39, 64);
+            this.btn_next_page.TabIndex = 53;
+            this.btn_next_page.UseVisualStyleBackColor = true;
+            this.btn_next_page.Click += new System.EventHandler(this.btn_next_page_Click);
+            // 
+            // btn_back_page
+            // 
+            this.btn_back_page.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_back_page.FlatAppearance.BorderSize = 0;
+            this.btn_back_page.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_back_page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back_page.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back_page.ForeColor = System.Drawing.Color.Black;
+            this.btn_back_page.Image = global::Restoran.Properties.Resources.left_arrow;
+            this.btn_back_page.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_back_page.Location = new System.Drawing.Point(592, 604);
+            this.btn_back_page.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_back_page.Name = "btn_back_page";
+            this.btn_back_page.Size = new System.Drawing.Size(46, 64);
+            this.btn_back_page.TabIndex = 52;
+            this.btn_back_page.UseVisualStyleBackColor = true;
+            this.btn_back_page.Click += new System.EventHandler(this.btn_back_page_Click);
+            // 
+            // pcb_menu5
+            // 
+            this.pcb_menu5.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
+            this.pcb_menu5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcb_menu5.Location = new System.Drawing.Point(403, 355);
+            this.pcb_menu5.Name = "pcb_menu5";
+            this.pcb_menu5.Size = new System.Drawing.Size(155, 109);
+            this.pcb_menu5.TabIndex = 41;
+            this.pcb_menu5.TabStop = false;
+            // 
+            // pcb_menu4
+            // 
+            this.pcb_menu4.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
+            this.pcb_menu4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcb_menu4.Location = new System.Drawing.Point(214, 355);
+            this.pcb_menu4.Name = "pcb_menu4";
+            this.pcb_menu4.Size = new System.Drawing.Size(155, 109);
+            this.pcb_menu4.TabIndex = 34;
+            this.pcb_menu4.TabStop = false;
+            // 
+            // pcb_menu3
+            // 
+            this.pcb_menu3.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
+            this.pcb_menu3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcb_menu3.Location = new System.Drawing.Point(28, 355);
+            this.pcb_menu3.Name = "pcb_menu3";
+            this.pcb_menu3.Size = new System.Drawing.Size(155, 109);
+            this.pcb_menu3.TabIndex = 27;
+            this.pcb_menu3.TabStop = false;
+            // 
+            // pcb_menu2
+            // 
+            this.pcb_menu2.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
+            this.pcb_menu2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcb_menu2.Location = new System.Drawing.Point(404, 55);
+            this.pcb_menu2.Name = "pcb_menu2";
+            this.pcb_menu2.Size = new System.Drawing.Size(155, 109);
+            this.pcb_menu2.TabIndex = 20;
+            this.pcb_menu2.TabStop = false;
+            // 
+            // pcb_menu1
+            // 
+            this.pcb_menu1.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
+            this.pcb_menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcb_menu1.Location = new System.Drawing.Point(215, 55);
+            this.pcb_menu1.Name = "pcb_menu1";
+            this.pcb_menu1.Size = new System.Drawing.Size(155, 109);
+            this.pcb_menu1.TabIndex = 13;
+            this.pcb_menu1.TabStop = false;
+            // 
             // pcb_menu0
             // 
             this.pcb_menu0.BackgroundImage = global::Restoran.Properties.Resources.sashimi;
@@ -865,10 +796,81 @@
             this.pcb_menu0.TabIndex = 0;
             this.pcb_menu0.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Restoran.Properties.Resources.toko_kue;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_menu_admin
+            // 
+            this.btn_menu_admin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_menu_admin.FlatAppearance.BorderSize = 0;
+            this.btn_menu_admin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_menu_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_menu_admin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_menu_admin.ForeColor = System.Drawing.Color.White;
+            this.btn_menu_admin.Image = global::Restoran.Properties.Resources.team_management;
+            this.btn_menu_admin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_menu_admin.Location = new System.Drawing.Point(0, 635);
+            this.btn_menu_admin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_menu_admin.Name = "btn_menu_admin";
+            this.btn_menu_admin.Size = new System.Drawing.Size(228, 64);
+            this.btn_menu_admin.TabIndex = 5;
+            this.btn_menu_admin.Text = "Menu Admin";
+            this.btn_menu_admin.UseVisualStyleBackColor = true;
+            this.btn_menu_admin.Click += new System.EventHandler(this.btn_menu_admin_Click);
+            // 
+            // btn_minuman
+            // 
+            this.btn_minuman.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_minuman.FlatAppearance.BorderSize = 0;
+            this.btn_minuman.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_minuman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_minuman.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_minuman.ForeColor = System.Drawing.Color.White;
+            this.btn_minuman.Image = global::Restoran.Properties.Resources.cheers__1_;
+            this.btn_minuman.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_minuman.Location = new System.Drawing.Point(0, 213);
+            this.btn_minuman.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_minuman.Name = "btn_minuman";
+            this.btn_minuman.Size = new System.Drawing.Size(228, 64);
+            this.btn_minuman.TabIndex = 4;
+            this.btn_minuman.Text = "Minuman";
+            this.btn_minuman.UseVisualStyleBackColor = true;
+            this.btn_minuman.Click += new System.EventHandler(this.btn_minuman_Click);
+            // 
+            // btn_makanan
+            // 
+            this.btn_makanan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_makanan.FlatAppearance.BorderSize = 0;
+            this.btn_makanan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_makanan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_makanan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_makanan.ForeColor = System.Drawing.Color.White;
+            this.btn_makanan.Image = global::Restoran.Properties.Resources.cake__1_;
+            this.btn_makanan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_makanan.Location = new System.Drawing.Point(0, 140);
+            this.btn_makanan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_makanan.Name = "btn_makanan";
+            this.btn_makanan.Size = new System.Drawing.Size(228, 64);
+            this.btn_makanan.TabIndex = 3;
+            this.btn_makanan.Text = "Makanan";
+            this.btn_makanan.UseVisualStyleBackColor = true;
+            this.btn_makanan.Click += new System.EventHandler(this.btn_makanan_Click);
+            // 
             // MenuUtama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1358, 704);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -884,24 +886,24 @@
             this.Load += new System.EventHandler(this.MenuUtama_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_qty0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_menu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_menu0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

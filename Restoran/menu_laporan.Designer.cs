@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.DataTableLaporanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSet_Billing = new Restoran.DataSet_Billing();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -68,9 +68,9 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.DataTableLaporanBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.DataTableLaporanBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Restoran.Report_Laporan.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(234, 172);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(5);
@@ -110,7 +110,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -126,13 +126,13 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(238, 6);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 19);
+            this.label3.Size = new System.Drawing.Size(108, 19);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Restoran Sushi Sherilyn";
+            this.label3.Text = "Restoran Kue";
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel3.BackColor = System.Drawing.Color.Gray;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(234, 0);
@@ -148,9 +148,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(31, 137);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 17);
+            this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Restoran Sushi Sherilyn";
+            this.label2.Text = "RestoranKue";
             // 
             // btn_laporan
             // 
@@ -173,7 +173,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.btn_kembali);
             this.panel2.Controls.Add(this.btn_laporan);
             this.panel2.Controls.Add(this.label2);
@@ -206,7 +206,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Restoran.Properties.Resources.sushi1dalam;
+            this.pictureBox1.Image = global::Restoran.Properties.Resources.toko_kue;
             this.pictureBox1.Location = new System.Drawing.Point(34, 58);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(131, 76);

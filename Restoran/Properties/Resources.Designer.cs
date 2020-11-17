@@ -73,6 +73,36 @@ namespace Restoran.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cake__1_ {
+            get {
+                object obj = ResourceManager.GetObject("cake (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cheers__1_ {
+            get {
+                object obj = ResourceManager.GetObject("cheers (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cooking {
+            get {
+                object obj = ResourceManager.GetObject("cooking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap food_serving {
             get {
                 object obj = ResourceManager.GetObject("food-serving", resourceCulture);
@@ -146,6 +176,16 @@ namespace Restoran.Properties {
         internal static System.Drawing.Bitmap team_management {
             get {
                 object obj = ResourceManager.GetObject("team-management", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toko_kue {
+            get {
+                object obj = ResourceManager.GetObject("toko_kue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
